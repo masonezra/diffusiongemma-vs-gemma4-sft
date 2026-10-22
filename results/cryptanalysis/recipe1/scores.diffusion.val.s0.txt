@@ -1,0 +1,21 @@
+level 1 substitution with word gaps, n=16                {'rows': 20, 'error': 63.23, 'edits': 62.6, 'exact': 5.0, 'clash': 1.88, 'error 95%': [51.21, 74.06], 'edits 95%': [50.4, 72.81], 'exact 95%': [0.0, 15.0]}
+level 1 substitution with word gaps, n=32                {'rows': 20, 'error': 40.04, 'edits': 38.95, 'exact': 20.0, 'clash': 0.95, 'error 95%': [25.87, 53.05], 'edits 95%': [25.09, 52.47], 'exact 95%': [5.0, 40.0]}
+level 1 substitution with word gaps, n=64                {'rows': 20, 'error': 5.0, 'edits': 5.0, 'exact': 55.0, 'clash': 0.08, 'error 95%': [1.17, 12.27], 'edits 95%': [1.17, 11.17], 'exact 95%': [35.0, 75.0]}
+level 1 substitution with word gaps, n=128               {'rows': 20, 'error': 0.51, 'edits': 0.51, 'exact': 60.0, 'clash': 0.08, 'error 95%': [0.23, 0.86], 'edits 95%': [0.23, 0.86], 'exact 95%': [40.0, 80.0]}
+level 1 substitution with word gaps, n=254               {'rows': 20, 'error': 0.71, 'edits': 0.71, 'exact': 90.0, 'clash': 0.04, 'error 95%': [0.0, 2.11], 'edits 95%': [0.0, 2.11], 'exact 95%': [75.0, 100.0]}
+level 2 substitution, n=16                               {'rows': 20, 'error': 81.25, 'edits': 78.44, 'exact': 0.0, 'clash': 2.81, 'error 95%': [73.75, 87.81], 'edits 95%': [71.56, 85.62], 'exact 95%': [0.0, 0.0]}
+level 2 substitution, n=32                               {'rows': 20, 'error': 81.09, 'edits': 75.78, 'exact': 0.0, 'clash': 2.03, 'error 95%': [71.56, 89.53], 'edits 95%': [67.66, 82.19], 'exact 95%': [0.0, 0.0]}
+level 2 substitution, n=64                               {'rows': 20, 'error': 56.33, 'edits': 53.28, 'exact': 10.0, 'clash': 0.86, 'error 95%': [39.84, 73.2], 'edits 95%': [36.8, 67.34], 'exact 95%': [0.0, 25.0]}
+level 2 substitution, n=128                              {'rows': 20, 'error': 18.12, 'edits': 17.11, 'exact': 50.0, 'clash': 0.04, 'error 95%': [4.88, 33.75], 'edits 95%': [4.96, 31.68], 'exact 95%': [30.0, 75.0]}
+level 2 substitution, n=254                              {'rows': 20, 'error': 1.02, 'edits': 1.02, 'exact': 75.0, 'clash': 0.06, 'error 95%': [0.06, 2.48], 'edits 95%': [0.04, 2.36], 'exact 95%': [55.0, 95.0]}
+level 3 vigenere                                         {'rows': 100, 'error': 87.93, 'edits': 87.69, 'exact': 0.0, 'error 95%': [87.42, 88.43], 'edits 95%': [87.25, 88.13], 'exact 95%': [0.0, 0.0]}
+level 4 autokey                                          {'rows': 100, 'error': 87.81, 'edits': 87.62, 'exact': 0.0, 'error 95%': [87.3, 88.33], 'edits 95%': [87.11, 88.15], 'exact 95%': [0.0, 0.0]}
+level 5 columnar                                         {'rows': 100, 'error': 87.65, 'edits': 84.7, 'exact': 0.0, 'error 95%': [87.19, 88.18], 'edits 95%': [84.2, 85.23], 'exact 95%': [0.0, 0.0]}
+level 5 columnar, width=4                                {'rows': 22, 'error': 87.19, 'edits': 84.55, 'exact': 0.0, 'error 95%': [86.24, 88.08], 'edits 95%': [83.44, 85.58], 'exact 95%': [0.0, 0.0]}
+level 5 columnar, width=5                                {'rows': 12, 'error': 87.46, 'edits': 84.73, 'exact': 0.0, 'error 95%': [86.03, 88.83], 'edits 95%': [83.53, 86.23], 'exact 95%': [0.0, 0.0]}
+level 5 columnar, width=6                                {'rows': 15, 'error': 86.77, 'edits': 83.13, 'exact': 0.0, 'error 95%': [84.81, 88.47], 'edits 95%': [81.24, 84.73], 'exact 95%': [0.0, 0.0]}
+level 5 columnar, width=7                                {'rows': 17, 'error': 88.27, 'edits': 85.26, 'exact': 0.0, 'error 95%': [87.34, 89.26], 'edits 95%': [84.12, 86.29], 'exact 95%': [0.0, 0.0]}
+level 5 columnar, width=8                                {'rows': 18, 'error': 88.53, 'edits': 85.09, 'exact': 0.0, 'error 95%': [87.57, 89.59], 'edits 95%': [84.31, 85.88], 'exact 95%': [0.0, 0.0]}
+level 5 columnar, width=9                                {'rows': 16, 'error': 87.63, 'edits': 85.35, 'exact': 0.0, 'error 95%': [86.81, 88.5], 'edits 95%': [83.91, 86.62], 'exact 95%': [0.0, 0.0]}
+level 6 homophonic                                       {'rows': 100, 'error': 87.34, 'edits': 86.88, 'exact': 0.0, 'clash': 4.19, 'error 95%': [85.67, 88.4], 'edits 95%': [85.11, 87.92], 'exact 95%': [0.0, 0.0]}
+level 7 homophonic                                       {'rows': 100, 'error': 87.13, 'edits': 86.3, 'exact': 0.0, 'clash': 2.14, 'error 95%': [85.4, 88.19], 'edits 95%': [84.53, 87.49], 'exact 95%': [0.0, 0.0]}

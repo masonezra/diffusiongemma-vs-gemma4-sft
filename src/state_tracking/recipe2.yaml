@@ -1,0 +1,26 @@
+global_batch_size: 32
+local_batch_size: 8
+seq_length: 512
+dataset: recipe2
+validation: val.sudoku.jsonl
+lora_rank: 64
+lora_alpha: 128
+max_steps: 1000
+arms:
+  ar:
+    model: ar
+  diffusion:
+    model: diffusion
+    dllm:
+      encoder_loss_weight: 1.0
+  diffusion_always:
+    model: diffusion
+    dllm:
+      self_conditioning_p: 1.0
+      encoder_loss_weight: 1.0
+  diffusion_gradient:
+    model: diffusion
+    self_conditioning_grad: true
+    dllm:
+      self_conditioning_p: 1.0
+      encoder_loss_weight: 1.0

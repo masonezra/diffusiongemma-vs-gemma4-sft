@@ -1,0 +1,103 @@
+{
+ "settings": {
+  "recipe": 2,
+  "regime": "keyed",
+  "seed": 0,
+  "budget": 96000,
+  "held_out_each": 500,
+  "held_out_few": 100,
+  "levels": 7,
+  "graded_levels": [
+   1,
+   2
+  ],
+  "lengths": [
+   32,
+   64,
+   128
+  ],
+  "unicity_margin": 2.5,
+  "redundancy": 3.2,
+  "held_out_overlap_letters": 32,
+  "texts": {
+   "train": 387448,
+   "val": 2755,
+   "test": 10785
+  },
+  "text_source": {
+   "dataset": "librarian-bots/arxiv-metadata-snapshot",
+   "revision": "5071ce89fe1da64b9d51284b44b924412cd044b7",
+   "held_out_from": "2607"
+  }
+ },
+ "train": {
+  "rows": 96000,
+  "rows by level": {
+   "1": 13646,
+   "2": 13709,
+   "3": 13601,
+   "4": 13739,
+   "5": 13825,
+   "6": 13776,
+   "7": 13704
+  },
+  "longest reply in tokens": 128
+ },
+ "val": {
+  "rows": 700,
+  "rows by level": {
+   "1": 100,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "5": 100,
+   "6": 100,
+   "7": 100
+  },
+  "longest reply in tokens": 128
+ },
+ "test": {
+  "rows": 3500,
+  "rows by level": {
+   "1": 500,
+   "2": 500,
+   "3": 500,
+   "4": 500,
+   "5": 500,
+   "6": 500,
+   "7": 500
+  },
+  "longest reply in tokens": 128
+ },
+ "test_random": {
+  "rows": 700,
+  "rows by level": {
+   "1": 100,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "5": 100,
+   "6": 100,
+   "7": 100
+  },
+  "longest reply in tokens": 128
+ },
+ "files": {
+  "test.jsonl": {
+   "rows": 3500,
+   "sha256": "495ac4022fa3c75040476def6fa7226b2856a60925edf86c85bd9092df60e423"
+  },
+  "test_random.jsonl": {
+   "rows": 700,
+   "sha256": "ba95adaea53f7747ad97c31671dfb8b90db530c0b35a07da2b49979be7662c6f"
+  },
+  "train.jsonl": {
+   "rows": 96000,
+   "sha256": "8815b5b4071b3f813be209a7bfc5dc03582c86d13bf358b0e932027340359889"
+  },
+  "val.jsonl": {
+   "rows": 700,
+   "sha256": "f9134b5725375d82e8de83b77f994d94bb2c2a52edf3c52e2f0412d78ca6e2f7"
+  }
+ }
+}

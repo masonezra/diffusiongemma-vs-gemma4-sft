@@ -1,0 +1,63 @@
+{
+ "settings": {
+  "seed": 0,
+  "held_rows": {
+   "val": 3000
+  },
+  "hidden_share": 0.3,
+  "max_answer_tokens": 250,
+  "max_total_tokens": 700,
+  "source": {
+   "zenodo_record": 7072337,
+   "file": "EDCS_text_cleaned_2022-09-12.json",
+   "md5": "7ee22c65f442d54ba3537955603cc0ba"
+  }
+ },
+ "edcs": {
+  "read": 537262,
+  "short": 173867,
+  "other_script": 17081,
+  "no_text": 6997,
+  "other_language": 1360,
+  "doubtful": 58695,
+  "unresolved": 26635,
+  "broken_marks": 2575,
+  "duplicate": 21643,
+  "held_copy": 8611
+ },
+ "dropped": {
+  "too_long": 1123
+ },
+ "train": {
+  "rows": 170111,
+  "with hidden letters": 153210,
+  "abbreviations": 656884,
+  "gaps": 529705
+ },
+ "val": {
+  "rows": 3000,
+  "with hidden letters": 2677,
+  "abbreviations": 12132,
+  "gaps": 9432
+ },
+ "test": {
+  "rows": 22476,
+  "with hidden letters": 20253,
+  "abbreviations": 88563,
+  "gaps": 71539
+ },
+ "files": {
+  "test.jsonl": {
+   "rows": 22476,
+   "sha256": "6db045dcc4b538a1ce2692274d202a432c6b57dc861f8be1227cf35e4d898763"
+  },
+  "train.jsonl": {
+   "rows": 170111,
+   "sha256": "2f3e399cb5e93b7e40837cdbe9f995eccf9765c63d177882932a0d60ad38579d"
+  },
+  "val.jsonl": {
+   "rows": 3000,
+   "sha256": "0fd2172ad103ca153212f8606c7c5d8b37507661bda1263e6135f848586962ba"
+  }
+ }
+}

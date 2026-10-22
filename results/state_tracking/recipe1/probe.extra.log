@@ -1,0 +1,6 @@
+2026-10-17T16:30:13Z diffusion_gradient step 999 T=1 rc=0 | k=1: L 21 E 0 | k=2: L 14 E 0 | k=3: L 15 E 0 | k=4: L 12 E 0 | k=6: L 10 E 0 | k=8: L 10 E 0 | k=12: L 9 E 0 | k=16: L 9 E 0 | k=24: L 6 E 0 | n=900
+val.diffusion.extra.diffusion_gradient.999.T1.jsonl | k=1, 100 episodes | replaced positions right 8% (chance 6) | copied positions right 20% | all 14 copied positions right 0%
+2026-10-17T16:36:09Z diffusion_gradient step 999 T=4 rc=0 | k=1: L 27 E 0 | k=2: L 8 E 0 | k=3: L 14 E 0 | k=4: L 9 E 0 | k=6: L 9 E 0 | k=8: L 9 E 0 | k=12: L 9 E 0 | k=16: L 9 E 0 | k=24: L 7 E 0 | n=900
+val.diffusion.extra.diffusion_gradient.999.T4.jsonl | k=1, 100 episodes | replaced positions right 11% (chance 6) | copied positions right 29% | all 14 copied positions right 15%
+2026-10-17T16:41:04Z diffusion step 999 T=1 rc=0 | k=1: L 84 E 2 | k=2: L 15 E 0 | k=3: L 14 E 0 | k=4: L 13 E 0 | k=6: L 12 E 0 | k=8: L 11 E 0 | k=12: L 8 E 0 | k=16: L 8 E 0 | k=24: L 6 E 0 | n=900
+val.diffusion.extra.diffusion.999.T1.jsonl | k=1, 100 episodes | replaced positions right 14% (chance 6) | copied positions right 94% | all 14 copied positions right 75%

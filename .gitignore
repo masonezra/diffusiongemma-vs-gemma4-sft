@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.venv/
+.vexp/
+.env
+dataset/
+.vscode/
+.pytest_cache/
+wandb/
+results/**/adapter/

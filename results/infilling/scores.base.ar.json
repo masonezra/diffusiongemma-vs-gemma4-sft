@@ -1,0 +1,165 @@
+{
+ "all": {
+  "rows": 1000,
+  "pass": 28.5,
+  "exact": 20.2,
+  "similar": 70.4,
+  "length off": 36.7,
+  "pass_interval": {
+   "groups": 1000,
+   "low": 25.7,
+   "high": 31.7
+  }
+ },
+ "1 gap": {
+  "rows": 534,
+  "pass": 40.8,
+  "exact": 28.8,
+  "similar": 72.3,
+  "length off": 32.8
+ },
+ "line_span": {
+  "rows": 297,
+  "pass": 43.4,
+  "exact": 24.2,
+  "similar": 70.4,
+  "length off": 31.7
+ },
+ "5+ lines": {
+  "rows": 513,
+  "pass": 16.6,
+  "exact": 7.2,
+  "similar": 63.0,
+  "length off": 46.3
+ },
+ "fits canvas": {
+  "rows": 1000,
+  "pass": 28.5,
+  "exact": 20.2,
+  "similar": 70.4,
+  "length off": 36.7
+ },
+ "within training length": {
+  "rows": 1000,
+  "pass": 28.5,
+  "exact": 20.2,
+  "similar": 70.4,
+  "length off": 36.7
+ },
+ "task shown": {
+  "rows": 1000,
+  "pass": 28.5,
+  "exact": 20.2,
+  "similar": 70.4,
+  "length off": 36.7
+ },
+ "opencodeinstruct": {
+  "rows": 587,
+  "pass": 29.6,
+  "exact": 19.4,
+  "similar": 70.6,
+  "length off": 37.0
+ },
+ "random_span": {
+  "rows": 211,
+  "pass": 2.4,
+  "exact": 6.2,
+  "similar": 61.4,
+  "length off": 54.1
+ },
+ "3 gaps": {
+  "rows": 108,
+  "pass": 6.5,
+  "exact": 7.4,
+  "similar": 68.4,
+  "length off": 43.1
+ },
+ "mixed": {
+  "rows": 340,
+  "pass": 8.2,
+  "exact": 8.2,
+  "similar": 67.5,
+  "length off": 41.8
+ },
+ "kodcode": {
+  "rows": 378,
+  "pass": 28.3,
+  "exact": 22.5,
+  "similar": 72.0,
+  "length off": 34.4
+ },
+ "several gaps": {
+  "rows": 466,
+  "pass": 14.4,
+  "exact": 10.3,
+  "similar": 68.1,
+  "length off": 41.2
+ },
+ "separate gaps": {
+  "rows": 355,
+  "pass": 16.6,
+  "exact": 13.2,
+  "similar": 70.5,
+  "length off": 36.2
+ },
+ "linked gaps": {
+  "rows": 111,
+  "pass": 7.2,
+  "exact": 0.9,
+  "similar": 60.5,
+  "length off": 57.0
+ },
+ "linked, name hidden": {
+  "rows": 127,
+  "pass": 6.3,
+  "exact": 0.8,
+  "similar": 60.9,
+  "length off": 56.8
+ },
+ "node_span": {
+  "rows": 152,
+  "pass": 80.9,
+  "exact": 58.6,
+  "similar": 89.3,
+  "length off": 11.1
+ },
+ "1 line": {
+  "rows": 182,
+  "pass": 64.3,
+  "exact": 52.7,
+  "similar": 85.8,
+  "length off": 14.6
+ },
+ "2-4 lines": {
+  "rows": 305,
+  "pass": 27.2,
+  "exact": 22.6,
+  "similar": 73.5,
+  "length off": 33.8
+ },
+ "2 gaps": {
+  "rows": 358,
+  "pass": 16.8,
+  "exact": 11.2,
+  "similar": 68.0,
+  "length off": 40.6
+ },
+ "codecontests": {
+  "rows": 35,
+  "pass": 11.4,
+  "exact": 8.6,
+  "similar": 47.6,
+  "length off": 55.8
+ },
+ "backward link": {
+  "rows": 62,
+  "pass": 8.1,
+  "exact": 8.1,
+  "similar": 64.1,
+  "length off": 44.3
+ },
+ "faults": {
+  "unclosed": 6.1,
+  "broken": 60.1
+ }
+}

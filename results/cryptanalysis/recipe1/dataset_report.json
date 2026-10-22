@@ -1,0 +1,86 @@
+{
+ "settings": {
+  "seed": 0,
+  "budget": 320000,
+  "held_out_each": 950,
+  "held_out_few": 100,
+  "levels": 7,
+  "graded_levels": [
+   1,
+   2
+  ],
+  "lengths": [
+   16,
+   32,
+   64,
+   128,
+   254
+  ],
+  "unicity_margin": 2.5,
+  "redundancy": 3.2,
+  "held_out_overlap_letters": 32,
+  "texts": {
+   "train": 387448,
+   "val": 2755,
+   "test": 10785
+  },
+  "text_source": {
+   "dataset": "librarian-bots/arxiv-metadata-snapshot",
+   "revision": "5071ce89fe1da64b9d51284b44b924412cd044b7",
+   "held_out_from": "2607"
+  }
+ },
+ "train": {
+  "rows": 320000,
+  "rows by level": {
+   "1": 45392,
+   "2": 45723,
+   "3": 45623,
+   "4": 45763,
+   "5": 45856,
+   "6": 45736,
+   "7": 45907
+  },
+  "longest answer in tokens": 254
+ },
+ "val": {
+  "rows": 700,
+  "rows by level": {
+   "1": 100,
+   "2": 100,
+   "3": 100,
+   "4": 100,
+   "5": 100,
+   "6": 100,
+   "7": 100
+  },
+  "longest answer in tokens": 254
+ },
+ "test": {
+  "rows": 6650,
+  "rows by level": {
+   "1": 950,
+   "2": 950,
+   "3": 950,
+   "4": 950,
+   "5": 950,
+   "6": 950,
+   "7": 950
+  },
+  "longest answer in tokens": 254
+ },
+ "files": {
+  "test.jsonl": {
+   "rows": 6650,
+   "sha256": "5b35d566158bf56cecc184c3782534f60a4b0627af84a41cf977f3013998685f"
+  },
+  "train.jsonl": {
+   "rows": 320000,
+   "sha256": "0b1bd601cd32b1f68df90a08294943794b492f9eec18f8f71f290020f1d32fd1"
+  },
+  "val.jsonl": {
+   "rows": 700,
+   "sha256": "51d4c295af410b968cb6cf7b6cfe27ae8fe318eae32d97fd8330c6876ec59d5e"
+  }
+ }
+}

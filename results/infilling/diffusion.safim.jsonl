@@ -1,0 +1,600 @@
+{"id": "block_completion_v2_001309", "reply": "```python\n    print(max(input().split('1')))\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_001307", "reply": "```python\n\tn=int(g)\n\tb=[*open(0)][g+1].split()\n\tc=0\n\tfor i in b:\n\t\tif i=='0':c+=1\n\t\telse:c=0\n\tprint(c)\n```", "generated_tokens": 63, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_004519", "reply": "```python\n  print(\"First\" if n%3!=0 else \"Second\")\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_004520", "reply": "```python\nprint(\"First\")\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_001127", "reply": "```python\nt.append(list(map(int,input().split())))\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_004505", "reply": "```python\n  print(\"YES\" if sum(map(int,input().split()))%25==0 else \"NO\")\n```", "generated_tokens": 31, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_003673", "reply": "```python\ncount[bit] += (b >> bit) & 1\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_004344", "reply": "```python\n    g=R*P(m-r,i,M)%M;a.append(g)\n```", "generated_tokens": 29, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_002899", "reply": "```python\n  print(int,a.split())\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_000936", "reply": "```python\n  n,k=map(int,KP.split())\n  print(\"YES\" if n%2==k%2 else \"NO\")\n```", "generated_tokens": 37, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "control_completion_003302", "reply": "```python\nx in map(int,s)\n \n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_004549", "reply": "```python\n    print(len(set(input())))\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "control_completion_003301", "reply": "```python\nx in map(int, s)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_003604", "reply": "```python\n  i+=1\n  if i==int(x):i+=1\n\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_002900", "reply": "```python\nprint(\"NO\")\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_002423", "reply": "```python\n  i+=1\n\n \n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.689}
+{"id": "block_completion_v2_001920", "reply": "```python\n    n, k = map(int, input().split())\n    print(min(n+1, 2**k))\n```", "generated_tokens": 34, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "block_completion_v2_003605", "reply": "```python\n\t\t\tb+=1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "control_completion_005980", "reply": "```python\ni in map(int,input().split())\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "control_completion_000712", "reply": "```python\n_ in range(int(input()))\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "control_completion_007486", "reply": "```python\nrange(int(input()))\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "block_completion_v2_003675", "reply": "```python\n            if v0 & 1: f1[j] ^= 1\n            if v1 & 1: f2[j] ^= 1\n            v0 >>= 1\n            v1 >>= 1\n            j += 1\n\n```", "generated_tokens": 59, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "control_completion_007496", "reply": "```python\nrange(int(input()))\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "control_completion_003300", "reply": "```python\n((x + a) << b) % mod == 0\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "block_completion_v2_003449", "reply": "```python\nres += score[i][j]\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "block_completion_v2_003221", "reply": "```python\n            xors ^= (x >> i) & 1\r\n            res += s[xors] * j\n```", "generated_tokens": 30, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "block_completion_v2_003790", "reply": "```python\n            cur = 0\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "block_completion_v2_004516", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "control_completion_005985", "reply": "```python\ncnt[i] >= i+1\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "control_completion_000829", "reply": "```python\nin a\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "control_completion_000714", "reply": "```python\nnum>=1400\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "block_completion_v2_004551", "reply": "```python\nans+=1\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.691}
+{"id": "block_completion_v2_000887", "reply": "```python\n print(sum(map(int,s)))\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "block_completion_v2_000888", "reply": "```python\n print(int(s)+3)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "block_completion_v2_003114", "reply": "```python\n    n,k,x=map(int,s.split())\n    if k>n or x<k:\n        print(-1)\n    else:\n        print(k*x+(n-k)*x)\n```", "generated_tokens": 56, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_000965", "reply": "```python\n(t2<m-1)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "block_completion_v2_002046", "reply": "```python\n  k+=a1[i]\n    i+=2\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_000960", "reply": "```python\nrange(i, -1, -1)\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "block_completion_v2_003614", "reply": "```python\n s+=t % 10\n               t=t // 10\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_000722", "reply": "```python\n1400<=c<=1599\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "block_completion_v2_003791", "reply": "```python\nlocal_max = max(local_max + arr[i], arr[i])\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_000831", "reply": "```python\nrange(m)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_005707", "reply": "```python\n'R' in lines[a+i]\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_007490", "reply": "```python\ni in s\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_005296", "reply": "```python\n_ in range(int(input())):\n    input();s=\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "block_completion_v2_004357", "reply": "```python\n        break\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_005298", "reply": "```python\n_ in range(int(input())):\n    input();sdr\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "block_completion_v2_004550", "reply": "```python\ndi[ch] = 1\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.423}
+{"id": "control_completion_005297", "reply": "```python\n_ in range(int(input()))\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "control_completion_005706", "reply": "```python\n\"R\" in row\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "block_completion_v2_003772", "reply": "```python\nans += ct[max(j+1,len(ls[i])-j-1)-min(j+1,len(ls[i])-j-1)][2*val-tval]\n```", "generated_tokens": 49, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "control_completion_005705", "reply": "```python\nrow.count('B')==8\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "control_completion_000969", "reply": "```python\nrange(1, len(b))\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "control_completion_007495", "reply": "```python\nrange(3,6)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "control_completion_003404", "reply": "```python\nF(g,m)<=c\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "block_completion_v2_003113", "reply": "```python\n        print(n * x + 1))\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "control_completion_000837", "reply": "```python\nmat[jj-r[kk]-1][kk]==\".\"\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "block_completion_v2_003475", "reply": "```python\nx-=1\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "control_completion_000964", "reply": "```python\ni in range(l+1, n)\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "control_completion_000834", "reply": "```python\ns[a+1][b]=='.'\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "block_completion_v2_001859", "reply": "```python\nans += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "block_completion_v2_003501", "reply": "```python\n  print(\"YES\" if len(set(map(int,s.split())))<3 else \"NO\")\n```", "generated_tokens": 30, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "block_completion_v2_001434", "reply": "```python\ncontinue\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "block_completion_v2_004492", "reply": "```python\n  a,b=map(int,s.split())\n  print(a*b//math.gcd(a,b))\n```", "generated_tokens": 35, "terminated": true, "malformed": false, "seconds": 0.397}
+{"id": "block_completion_v2_003674", "reply": "```python\nb.append(x2)\n                break\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_003338", "reply": "```python\n  n,k,x=map(int,s.split())\n  if k*(k+1)//2<=x<=k*(n-k+1)//2:print(\"YES\")\n  else:print(\"NO\")\n```", "generated_tokens": 56, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_003135", "reply": "```python\nprint(len(input()))\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_001433", "reply": "```python\nc += 1\r\n                flag = 1\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "control_completion_005708", "reply": "```python\ntmp == \"B\" * 8\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_003009", "reply": "```python\n  if'vika'[i]in s:i+=1\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "control_completion_000501", "reply": "```python\nrange(n):x=int(input())\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "control_completion_000830", "reply": "```python\npos + 1 < n and grid[pos + 1][i] == \".\"\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_002625", "reply": "```python\n    print(i*(i+1)//2)\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "control_completion_000504", "reply": "```python\nrange(q)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_004528", "reply": "```python\n    print(max(*map(int,x.split())))\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "control_completion_000832", "reply": "```python\na[row][i]=='o'\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_001291", "reply": "```python\na.pop()\r\n            cnt += 1\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_000773", "reply": "```python\n    n = int(input())\r\n    return n*n+n\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_002351", "reply": "```python\n    print(sum(map(int, input().split())))\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_002441", "reply": "```python\n    print(\"YES\" if int(s)>1 else \"NO\")\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.499}
+{"id": "block_completion_v2_002626", "reply": "```python\n    print(n * n - 1)\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_003825", "reply": "```python\n  print(\"YES\" if \"1\" in s else \"NO\")\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "control_completion_000510", "reply": "```python\nsorted(g())\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_000597", "reply": "```python\n      continue\r```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "control_completion_005987", "reply": "```python\ncnt % (k + 1) != 0\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_002451", "reply": "```python\nndp[j] = (ndp[j] + j*dp[j]) % m\r```", "generated_tokens": 27, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_003226", "reply": "```python\nn,k=map(int,input().split())\na=list(map(int,input().split()))\n\tprint(\"YES\" if k in a else \"NO\")\n\n```", "generated_tokens": 45, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "control_completion_001643", "reply": "```python\n(s[i-1:i+1]==\"ab\" or s[i-1:i+1]==\"ba\")\n```", "generated_tokens": 32, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_003646", "reply": "```python\nc[i][j]=(c[i][j]+a[i][k]*b[k][j])%mod\n```", "generated_tokens": 32, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_003286", "reply": "```python\n    n=int(input())\r\n    a=list(map(int,input().split()))\r\n    b=list(map(int,input().split()))\r\n\n```", "generated_tokens": 44, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "control_completion_000017", "reply": "```python\ngraph[i]\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "control_completion_000833", "reply": "```python\nj=='*'\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_001958", "reply": "```python\nprint(int(nik))\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_003897", "reply": "```python\n    print(s.count(\"AB\"))\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "control_completion_008024", "reply": "```python\nlen(set(a)) < len(a)\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_003703", "reply": "```python\n  print(\"YES\" if p==sorted(p) else \"NO\")\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.506}
+{"id": "block_completion_v2_003702", "reply": "```python\n  print(\"YES\" if s==sorted(s) else \"NO\")\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "block_completion_v2_000965", "reply": "```python\nop = max(op, (l + 1) // 2)\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "control_completion_007560", "reply": "```python\nj in range(m)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "block_completion_v2_001182", "reply": "```python\n\t\tns = s - pr[n] * n\n\t\tans.append(pr[n] + k - (max(0, (k - n + 1) // 2 - ns) + n) // n)\n```", "generated_tokens": 55, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "control_completion_008022", "reply": "```python\n_ in range(T)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "block_completion_v2_001269", "reply": "```python\n  if len(set(s))==1:print(-1)\n  else:print(len(s)-1)\n```", "generated_tokens": 33, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "block_completion_v2_001271", "reply": "```python\n    print(len(x)-1 if len(set(x))>1 else -1)\n```", "generated_tokens": 27, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "block_completion_v2_004532", "reply": "```python\n range(3):\n  print(input().find('?')\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "control_completion_008563", "reply": "```python\n_ in range(int(input())):\n\tl=input()\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "control_completion_008566", "reply": "```python\n_ in range(int(input())):\n  n\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "block_completion_v2_000774", "reply": "```python\nn = int(sys.stdin.readline().strip())\n        solution(n)\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "control_completion_004370", "reply": "```python\nn % 4 == 0\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "control_completion_000512", "reply": "```python\nx == y\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "control_completion_000018", "reply": "```python\n(m[i] | x) == x\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "block_completion_v2_004531", "reply": "```python\n            print(t)\n            break\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "block_completion_v2_001172", "reply": "```python\nB[j] = (B[j] + B[j-1]) % MOD\n```", "generated_tokens": 25, "terminated": true, "malformed": false, "seconds": 0.513}
+{"id": "control_completion_000499", "reply": "```python\ni in range(1, n)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "control_completion_004690", "reply": "```python\nn==n[::-1]\n \n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "control_completion_000020", "reply": "```python\nval[b] & t\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_003898", "reply": "```python\n        print(max(0,b-a))\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "control_completion_000509", "reply": "```python\na == 0\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_000991", "reply": "```python\n n=int(v);input();a=[int(i) for i in input().split()];print(max(a[0]*a[1],a[-2]*a[-1]))\n```", "generated_tokens": 47, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "control_completion_000500", "reply": "```python\nq\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_002429", "reply": "```python\n            break\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_002514", "reply": "```python\n  m,k,a1,ak=map(int,s.split())\n  print((m-1)//k)\n```", "generated_tokens": 34, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_002724", "reply": "```python\n        break\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_000989", "reply": "```python\n    print(max(map(int,sdr.split())))\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "control_completion_008023", "reply": "```python\nz[x]>1\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_003010", "reply": "```python\nbi += 1\n                break\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_002462", "reply": "```python\nprint(2*b-1)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "control_completion_000508", "reply": "```python\n xy[0]-xy[1]==0\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_001435", "reply": "```python\nincreasing = False\r\n                result += 1\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.461}
+{"id": "block_completion_v2_001171", "reply": "```python\nls[i] = (ls[i] + ls[i-1]) % M\r```", "generated_tokens": 25, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_003402", "reply": "```python\nanswer += ord(arr[-1]) - ord(l)\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_001345", "reply": "```python\nu, v = map(int, input().split())\n    order[u-1] += 1\n    order[v-1] += 1\n```", "generated_tokens": 40, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_001292", "reply": "```python\nans *= (j - i)\r\n            i += 1\r```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_002723", "reply": "```python\nfact[i] = (fact[i-1]*i)%mod\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_002654", "reply": "```python\nprint(0)\n    break\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_000990", "reply": "```python\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    print(max(a[0]*a[1], a[-1]*a[-2]))\n```", "generated_tokens": 55, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "control_completion_002118", "reply": "```python\ni in range(n)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_003225", "reply": "```python\nans.append(\"NO\")\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_001867", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_002341", "reply": "```python\n            curr = max(curr, i - l)\n            l = i\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "control_completion_008565", "reply": "```python\nrange(b+1-p)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "control_completion_000838", "reply": "```python\narr[f][k]=='*'\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "control_completion_002120", "reply": "```python\nrange(n)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_002079", "reply": "```python\n  print(int(s)*2)-1\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_002328", "reply": "```python\nprint(\"NO\")\n        return\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.562}
+{"id": "block_completion_v2_004296", "reply": "```python\n                f=1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_001963", "reply": "```python\nans += max(0, (i - max(L_mx[i], L_mn[j]))) * max(0, min(R_mx[j], R_mn[i]))\n```", "generated_tokens": 48, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_004332", "reply": "```python\n    n,m=map(int,i.split())\n    print((n*m)//3)\n```", "generated_tokens": 29, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "control_completion_003663", "reply": "```python\nn >= d // num + 1\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_004470", "reply": "```python\nu.pop()\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "control_completion_004694", "reply": "```python\ni+p >= size\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_004533", "reply": "```python\nprint(\"B\")\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_001901", "reply": "```python\na[i] ^= a[i + size // 2]\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_001503", "reply": "```python\nprint('NO')\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "control_completion_007559", "reply": "```python\n0 <= new_row + sm_row[i] < n and 0 <= new_column + sm_column[i] < m\n```", "generated_tokens": 36, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_001136", "reply": "```python\ndp[f[i][j]] = (dp[f[i][j]] + dp[j]) % MD\n```", "generated_tokens": 31, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_004461", "reply": "```python\nreturn False\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "control_completion_007563", "reply": "```python\np>=0 and q<m\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_000898", "reply": "```python\nbst = i\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "control_completion_008030", "reply": "```python\npos < len_input\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "block_completion_v2_001962", "reply": "```python\n                    valid += true_i - dec[dec_i-1]\n                    end[dec_i-1] = (true_i, dec_i)\n                    end[true_i] = (dec_i-1, None)\n\n```", "generated_tokens": 59, "terminated": true, "malformed": false, "seconds": 0.45}
+{"id": "control_completion_002077", "reply": "```python\nl<n\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "control_completion_002661", "reply": "```python\nl == 2\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_000925", "reply": "```python\n    cnt+=1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_000896", "reply": "```python\nmax_value = values[i]\n                max_index = i + 1\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "control_completion_006840", "reply": "```python\narr[j] == 0 or i == j\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "control_completion_006841", "reply": "```python\narr[i] == 0\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_004177", "reply": "```python\n      cur = psum\ncand.append([mnv, cur])\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_001663", "reply": "```python\nbest = max(best, right + values[hi][j] + acc[i][max(hi, j)])\n```", "generated_tokens": 31, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "control_completion_004994", "reply": "```python\nrange(1, MAX)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_003873", "reply": "```python\nans += i\n            break\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_003370", "reply": "```python\nd[i] = min(d[i+1] + 1, d[a])\n```", "generated_tokens": 27, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_003345", "reply": "```python\nnum_zeros[i] = num_zeros[i - 1]\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_000364", "reply": "```python\nans += pow(k, n - 1, m) - f(2 * i, i, k) - f(2 * i + 1, i, k)\n```", "generated_tokens": 44, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_002111", "reply": "```python\n    b = []\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "control_completion_003524", "reply": "```python\nsums+lst<=m and dp[lst][sums]!=inf\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "control_completion_003667", "reply": "```python\nj>i\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.681}
+{"id": "block_completion_v2_002385", "reply": "```python\nG[j] |= G[j - 1] << i\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_004175", "reply": "```python\na2.append((req, profit - req))\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_004341", "reply": "```python\n   m=a[i];b.append(i)\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_008076", "reply": "```python\nrange(k,n+1)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_003110", "reply": "```python\n\t\t\t\tbreak\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_002386", "reply": "```python\nG[j] |= G[j - 1] << i\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_000970", "reply": "```python\nprint(\"YES\")\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_004560", "reply": "```python\n\n    a, b = map(int, input().split(\" \"))\n    print(\"Alice\" if a > b else \"Bob\")\n```", "generated_tokens": 34, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001183", "reply": "```python\n            m = min(m, k - left)\n            sum_ += left\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_004472", "reply": "```python\ncapital.pop()\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001896", "reply": "```python\n   if notd:r+=1;d=0\n\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001243", "reply": "```python\nx[i] = (j, x[a][1])\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001895", "reply": "```python\n   if-d==1:r+=1;d=0\r\n   else:t-=x\n```", "generated_tokens": 28, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001757", "reply": "```python\n      f = 1\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_002393", "reply": "```python\n            mn = y\n            ans = i + 1\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_000693", "reply": "```python\n            costs.append(n-1-i)\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_007566", "reply": "```python\nx in range(m)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_002201", "reply": "```python\nn, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    diff = [abs(a[i]-a[i+1]) for i in range(n-1)]\n    diff.sort()\n    print(sum(diff[k-1:]))\n```", "generated_tokens": 77, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_003314", "reply": "```python\n                tmp.update(s)\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "control_completion_004338", "reply": "```python\nbb<c\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "control_completion_003367", "reply": "```python\nt\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_001239", "reply": "```python\nd[a] = max(d[a], c)\r\n            a, c = w[i], 1\r```", "generated_tokens": 32, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "control_completion_003525", "reply": "```python\nrange(min(k,mx)+1)\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_000933", "reply": "```python\n print(g.count('_'))\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_004353", "reply": "```python\n    print(len(s))\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_002173", "reply": "```python\n        best = prefix_sum[n]\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_003371", "reply": "```python\n            dp[i]=min(dp[i],dp[i+a[i]+1])\r```", "generated_tokens": 27, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_003109", "reply": "```python\n            s = 0\n            l = r\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "control_completion_004333", "reply": "```python\nn-m > ans\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_000857", "reply": "```python\ntotal_diff += r_diff\r\n            right -= 1\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_002171", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "control_completion_004116", "reply": "```python\na[i] > a[i + 1]\n    d = a[i] - a[i + 1]\n```", "generated_tokens": 34, "terminated": true, "malformed": false, "seconds": 0.493}
+{"id": "block_completion_v2_003165", "reply": "```python\n  a,b,c=map(int,s.split())\n  print(-abs(a-b)//2*c)\n```", "generated_tokens": 35, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_002898", "reply": "```python\nrange(n)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "block_completion_v2_003535", "reply": "```python\nreturn k - i\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_002899", "reply": "```python\n_ in range(m)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_000999", "reply": "```python\n_ in range(int(input()))\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_000871", "reply": "```python\na[jj][0]==a[kk][0] and a[jj][1]!=a[kk][1]\n```", "generated_tokens": 31, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_004335", "reply": "```python\ni in L\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "block_completion_v2_004508", "reply": "```python\n  print(abs(p.count('+')-p.count('-')))\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_008601", "reply": "```python\na[j] == 1\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_001661", "reply": "```python\n2*i >= len(s)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "block_completion_v2_002468", "reply": "```python\nans.append(i+1)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "block_completion_v2_002473", "reply": "```python\n  print(len(list(map(int,s.split())))-1)\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "block_completion_v2_001137", "reply": "```python\ndp[j & lst[i]] = (dp[j & lst[i]] + dp[j]) % 1000000007\n```", "generated_tokens": 41, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_002900", "reply": "```python\ns<t\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "control_completion_001662", "reply": "```python\nl != r\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "block_completion_v2_000797", "reply": "```python\npres[i] = pres[i - 1] + node[i]\r```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.602}
+{"id": "block_completion_v2_004509", "reply": "```python\n    n = int(input())\n    s = input()\n    print(s.count(\"+\") - s.count(\"-\"))\n\n```", "generated_tokens": 34, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_002447", "reply": "```python\nrange(testcaseCount)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "block_completion_v2_001561", "reply": "```python\nres += m\n            break\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_003386", "reply": "```python\nB[i] > 0\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "block_completion_v2_002930", "reply": "```python\ncurrentmax |= b[i]\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_007979", "reply": "```python\ninp[i] != inp[i+1]\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_008599", "reply": "```python\nrange(n,0,-1)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "block_completion_v2_003411", "reply": "```python\n            if count > 1:\n                ans *= count\n                ans %= 998244353\n            count = 1\n            look = s[i]\n```", "generated_tokens": 46, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "block_completion_v2_002466", "reply": "```python\nans.append(i+1)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_002896", "reply": "```python\nx < y\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_001797", "reply": "```python\nn == 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "block_completion_v2_004108", "reply": "```python\nprint(b)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "block_completion_v2_004116", "reply": "```python\n            c -= b[-1]*(i-ind[b[-1]])\r\n            b.pop()\n```", "generated_tokens": 28, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "block_completion_v2_002503", "reply": "```python\nm2=i\r\n        if i>m2: res+=1\r```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_001664", "reply": "```python\na[2*i]!=a[2*i+1]\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_000789", "reply": "```python\n(a==b)\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.444}
+{"id": "control_completion_000788", "reply": "```python\n(a<b):\n            a=a+l1[l]\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_001666", "reply": "```python\nh==0\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "block_completion_v2_002203", "reply": "```python\ndiff.append(abs(a[i]-a[i-1]))\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_000998", "reply": "```python\ni == p_i\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_007743", "reply": "```python\np<tot\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "block_completion_v2_001245", "reply": "```python\nq.append((ne, v, d + 1))\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_000790", "reply": "```python\ns == x\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "block_completion_v2_004541", "reply": "```python\nt = e\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "block_completion_v2_000695", "reply": "```python\n            cnt[heappop(st)] += 1\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_002691", "reply": "```python\nb[pbi] & (1<<k) == 0\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_005221", "reply": "```python\narr\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_006875", "reply": "```python\nrange(t)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_007977", "reply": "```python\nrange(0,n,2)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_003362", "reply": "```python\nx in h\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_000874", "reply": "```python\nd+e not in c\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "block_completion_v2_001235", "reply": "```python\ncan_value[current_can]=can_value[current_can-i+1]# left\n```", "generated_tokens": 27, "terminated": true, "malformed": false, "seconds": 0.252}
+{"id": "control_completion_000876", "reply": "```python\na == s\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "control_completion_000868", "reply": "```python\nk != l\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_004240", "reply": "```python\n            a,b,c,d=ans\n            ans=[a,b,(b+a00+c)%mod,(c+a1+d)%mod,d]\n            a0,a1,a00,a10,a01,a11=a0,a10+1,(a00+a)%mod,a10,a01,a11\n\n```", "generated_tokens": 97, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "control_completion_000866", "reply": "```python\nl != b\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "control_completion_001766", "reply": "```python\nlast[r]==l\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_003875", "reply": "```python\nx -= g\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002025", "reply": "```python\nans = max(ans, l[i] ^ l[j])\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "control_completion_001260", "reply": "```python\nprev > a[i]\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_001743", "reply": "```python\ndp[j][t] = (dp[j][t] + dp[j - 1][t - dis]) % Mod\n```", "generated_tokens": 34, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002572", "reply": "```python\n            L0.append(min(row))\n            L1.append(max(row)\n```", "generated_tokens": 27, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_003926", "reply": "```python\na[i] = max(arr[i],a[i-1]+1)\r\nfor i in range(n-2,-1,-1):\r\n    b[i] = max(arr[i],b[i+1]+1)\r```", "generated_tokens": 62, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_003615", "reply": "```python\no += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "control_completion_003366", "reply": "```python\nrange(n)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002160", "reply": "```python\nind+=1\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002024", "reply": "```python\nans = max(ans,s[i]^s[j])\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "control_completion_000419", "reply": "```python\nf==0\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_004182", "reply": "```python\n                dq.pop()\n\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002683", "reply": "```python\n if a[i]<5:break;i-=1\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002475", "reply": "```python\nsay+=1\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002281", "reply": "```python\ncontinue\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002467", "reply": "```python\n        best = cost\n        result = [pos + 1]\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_004180", "reply": "```python\n                dq.pop()\r```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_001328", "reply": "```python\n        ans = gcd(ans, abs(a[i] - (i + 1)))\n```", "generated_tokens": 26, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_000604", "reply": "```python\nlis[i]=1\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_000828", "reply": "```python\n    s=srt\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_004029", "reply": "```python\n                dq.pop()\n\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "control_completion_001668", "reply": "```python\nls > rs:\n        return ln * rn * 2, rs + s[i - 1] + ls\n```", "generated_tokens": 31, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_003066", "reply": "```python\n                is_min.append(l)\r\n                now_min = a[l]\n```", "generated_tokens": 26, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002227", "reply": "```python\nreturn 0\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_003340", "reply": "```python\n        return False\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_001555", "reply": "```python\n  n,k=map(int,ok.split())\n  print((n+k)//k)\n```", "generated_tokens": 29, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_001553", "reply": "```python\n    print((s+1)//2)\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.638}
+{"id": "block_completion_v2_002352", "reply": "```python\na += i*(tmp_ls[i]-tmp_ls[i-1])\r\n        ans[tmp_ls[i]] = a\r```", "generated_tokens": 37, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_002369", "reply": "```python\nL.append(x)\n        x = root_dict[x]\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_003578", "reply": "```python\n                print(c, end='')\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "control_completion_004343", "reply": "```python\nnum in d\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "control_completion_008071", "reply": "```python\ni in range(n+1)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "control_completion_005229", "reply": "```python\nrange(i+1,n)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "control_completion_005228", "reply": "```python\nrange(k)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_000884", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_004056", "reply": "```python\n    return 0, 1\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_004501", "reply": "```python\n\t\tif(j&1):\n\t\t\to += k\n\t\telse:\n\t\t\ts += k\n\t\tr.append(str(s-o))\n```", "generated_tokens": 39, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "control_completion_007308", "reply": "```python\nmap(int,input().split())\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_001862", "reply": "```python\nprint(max(p_odd, p_even))\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_003545", "reply": "```python\n  if a[j]<c:c-=a[j];j-=1\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_003262", "reply": "```python\nprint(h)\n            done = True\n            break\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "control_completion_008448", "reply": "```python\nlen(input) == 3\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "control_completion_000463", "reply": "```python\nd[v]>d[u]+out[v]\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.623}
+{"id": "block_completion_v2_001089", "reply": "```python\n        h,w = w,h\n\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_000921", "reply": "```python\nm = x\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "control_completion_003391", "reply": "```python\nlen(pre) > k\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_000377", "reply": "```python\n  d[i]=f(v+a[i],k);v+=a[i]\n```", "generated_tokens": 27, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "control_completion_005225", "reply": "```python\ntuple(w) in cards\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_004420", "reply": "```python\n\t\ts1+=a[i]\n\t\ts2+=b[i]\n\t\tli.append(s1+(s-i)*2)\n```", "generated_tokens": 38, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "control_completion_005224", "reply": "```python\nrange(k)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_001352", "reply": "```python\ncontinue\n\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "control_completion_000793", "reply": "```python\n lowest == highest:\n            break\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_002850", "reply": "```python\n            return 'NO'\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_001392", "reply": "```python\nskillOne = int(m)\r```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_002031", "reply": "```python\nans += cnt * (cnt - 1)\r\n                cnt = 1\r```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_003944", "reply": "```python\na2[j] += op-o\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "control_completion_004006", "reply": "```python\nd[a[i]] != s[i]\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_003927", "reply": "```python\nrmax[i] = max(rmax[i+1], arr[i] + i)\n```", "generated_tokens": 28, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "control_completion_005227", "reply": "```python\nlast in dic and dic[last]>q\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.561}
+{"id": "block_completion_v2_002737", "reply": "```python\n            ans+=1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "block_completion_v2_002684", "reply": "```python\n\t\t\tp = 0;break\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "block_completion_v2_004120", "reply": "```python\ncontinue\r```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "control_completion_005226", "reply": "```python\nrange(k)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "control_completion_007042", "reply": "```python\nll in range(l)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "block_completion_v2_001423", "reply": "```python\n            j = le + k - 1\n            l = i + j\n            print(f\"{i} + {j} = {l}\")\n            return\n```", "generated_tokens": 41, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "control_completion_002472", "reply": "```python\ni == 0 and j == 0\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "control_completion_007043", "reply": "```python\nj in i\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "control_completion_004093", "reply": "```python\ni[1] % 2 != 0\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "block_completion_v2_002739", "reply": "```python\n            d[l[i]] = 0\n            count += 1\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "block_completion_v2_000558", "reply": "```python\nresult += mod\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "control_completion_002986", "reply": "```python\nx in D[j]\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "control_completion_008540", "reply": "```python\nrange(n)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "block_completion_v2_001586", "reply": "```python\n      A=x\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "block_completion_v2_002390", "reply": "```python\n                d[i][j]=max(d[i][j],z)\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "control_completion_007774", "reply": "```python\ni in range(N-2)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.652}
+{"id": "block_completion_v2_003929", "reply": "```python\nv1[i0+j] = v0[i0+j]\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_003616", "reply": "```python\nfreq[ord(c) - ord('a')] += 1\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "control_completion_001129", "reply": "```python\nshop[j] - shop[j-1] > 100\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_003127", "reply": "```python\nn = n*2\n            result+=1\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_001369", "reply": "```python\n    mi = min(mi, y - x + 1)\n        min_y = min(min_y, x)\n        max_x = max(max_x, y)\n```", "generated_tokens": 48, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_004267", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_002747", "reply": "```python\nDP[pct] = (p[pct]*p[pct]*E[k])%MOD\n```", "generated_tokens": 26, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_001539", "reply": "```python\nres += nums[s + d * i] * (i + 1)\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_004031", "reply": "```python\naLeft.pop()\n\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_004500", "reply": "```python\n    print(a[0])\n    continue\n\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_001039", "reply": "```python\n if x%k!=i%k:m+=1\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_001665", "reply": "```python\nres += 10 ** j\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_004269", "reply": "```python\nans = idx\r```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_002703", "reply": "```python\ndp2[j][z+1] = max(dp2[j][z+1], mx + a[i+1+j][z])\n```", "generated_tokens": 39, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_002194", "reply": "```python\ndp[i][j] = ((dp[i][j-1] + dp[i+1][j]) * inv2) % MOD\n```", "generated_tokens": 37, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "block_completion_v2_003004", "reply": "```python\nlf[a[i]]=i\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.522}
+{"id": "control_completion_008074", "reply": "```python\ndp[i]!=0\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_002656", "reply": "```python\nprint(\"NO\")\r\n            break\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "control_completion_008543", "reply": "```python\nd*b<d*(n-id)\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_003718", "reply": "```python\nans += a[i]-b[i]\r```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_002403", "reply": "```python\ncnt += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_001952", "reply": "```python\nj = i\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_004227", "reply": "```python\nn, x = map(int, input().split())\n    a = [0] + list(map(int, input().split())) + [x]\n    print(max(diff(a)))\n```", "generated_tokens": 50, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_001560", "reply": "```python\nmem[i] += a[i] * i\r```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_001094", "reply": "```python\n            lst = a[i]", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "control_completion_004308", "reply": "```python\nto_spread and to_spread[0][0] <= turn\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_004057", "reply": "```python\nreturn dp[n]\r```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_004188", "reply": "```python\nans = max(ans, a[i - 1] + suf)\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_002738", "reply": "```python\nres += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "control_completion_007311", "reply": "```python\na[i] > 0\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "block_completion_v2_003537", "reply": "```python\n    ans = min(ans, 2)\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "control_completion_004715", "reply": "```python\n_ in range(int(input()))\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.566}
+{"id": "control_completion_004309", "reply": "```python\nremain <= 0\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "block_completion_v2_003657", "reply": "```python\n                ex[actual_i[i]] += 1 << (i - q)\n                actual_i[i] = q\n```", "generated_tokens": 34, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "block_completion_v2_004255", "reply": "```python\n                count+=1\n                j+=1\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_005942", "reply": "```python\nb[i] > b[i+1]\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_004709", "reply": "```python\nlen(set(s[i:i+len(var)])) != len(var)\n```", "generated_tokens": 26, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "block_completion_v2_002843", "reply": "```python\ndelta.append(f[k ^ cnt])\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "block_completion_v2_002000", "reply": "```python\nreturn list(map(int, input().split()))\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "block_completion_v2_002685", "reply": "```python\n                return s[0:curr] + str(int(s[curr])+1) + ('0'*(n-curr-1))\n```", "generated_tokens": 36, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_004178", "reply": "```python\nrange(n)\n  v=I()\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_004712", "reply": "```python\nstr[i] != str[i + len(count.keys())]\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_004316", "reply": "```python\nrange(num_level)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_001084", "reply": "```python\n dp[i] == 0\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_002026", "reply": "```python\ntc in range(testcaseCount)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "block_completion_v2_002864", "reply": "```python\nans = 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_004710", "reply": "```python\ns[i]!=s[i-a]\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_002161", "reply": "```python\nst[2*cur]<st[cur]\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.497}
+{"id": "control_completion_002359", "reply": "```python\nlen(l) < 2\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_004714", "reply": "```python\n i1 in prev and ind - prev[i1] != req\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_001501", "reply": "```python\ncontinue\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_003142", "reply": "```python\n\t\td, s = I()\r\n\t\tdist = min(dist, d+s)\n```", "generated_tokens": 26, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_002160", "reply": "```python\ne & 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_000981", "reply": "```python\nans = 'NO'\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_001041", "reply": "```python\ncnt += 1\r```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_001431", "reply": "```python\nanswer = (answer * base) % p\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_001081", "reply": "```python\nx < 0 or y < 0\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_002361", "reply": "```python\np == i\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_004088", "reply": "```python\n            i += 1\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_002844", "reply": "```python\nlast_mex[j] = mex\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_004313", "reply": "```python\nis_ok(mid)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_004312", "reply": "```python\nfor i, i in enumerate(adi)\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_002708", "reply": "```python\nnmid[j] ^= 1\n                    ans += 1\n\n    return ans\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_004315", "reply": "```python\nf > time\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_000079", "reply": "```python\nrange(n)\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "control_completion_000080", "reply": "```python\n m\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_001913", "reply": "```python\nprint(\"Alice\")\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_004229", "reply": "```python\n            k=(e[i+1]-e[i])*2\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_003761", "reply": "```python\nind[k].pop()\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_002911", "reply": "```python\ns.append(even[i])\r\n            s.append(odd[i])\r```", "generated_tokens": 25, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_003747", "reply": "```python\nj=j[:k]+\"01\"+j[k:]\r\n                l+=1\r\n                m.append(k)\n```", "generated_tokens": 34, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_001912", "reply": "```python\nprint(\"Alice\")\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_004367", "reply": "```python\ndx[0] = True\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "control_completion_008535", "reply": "```python\nidx, num in enumerate(nums)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_002896", "reply": "```python\n   l+=1;\n  m=max(m,a+k)\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_003993", "reply": "```python\nd.append('1')\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "control_completion_008536", "reply": "```python\nf in range(n+1)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_004030", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_001040", "reply": "```python\nc += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_003762", "reply": "```python\ninds[j].pop()\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.479}
+{"id": "block_completion_v2_001972", "reply": "```python\nOP.append([b])\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_000086", "reply": "```python\nfor line in INPUT[2:]\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_001093", "reply": "```python\nnx in range(x-1, x+1+1)\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_008133", "reply": "```python\n(i-2) % 4 == 0\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_001370", "reply": "```python\nintersection = b2 - a2 + 1\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_003793", "reply": "```python\npairs += f[j] * greater[j] + extra[j]\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_001770", "reply": "```python\nnx[l-1] <= r\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_003691", "reply": "```python\nx-ded <= t\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_000833", "reply": "```python\ncontinue\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_003995", "reply": "```python\nsys.stdout.write(\"1 0 0 \\n\")\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_002912", "reply": "```python\nans[v] = s[i]\n            v += 2\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_008161", "reply": "```python\nrange((end - start + 1) // 2)\n        if i % 2 == 0:\n\n```", "generated_tokens": 30, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_002988", "reply": "```python\nisinstance(to, GeneratorType)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_003360", "reply": "```python\nx = max(x, a[j])\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "block_completion_v2_002637", "reply": "```python\nSUM-=heap[0]\n                heapq.heapreplace(heap,i)\n                SUM+=i\n```", "generated_tokens": 29, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_004186", "reply": "```python\n val > max\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.452}
+{"id": "control_completion_007951", "reply": "```python\nt[i] != t[i + 1]\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_000531", "reply": "```python\nadj[x][y] == 0 and dis[x][y] < dis[y][x]\n```", "generated_tokens": 29, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_002766", "reply": "```python\n                ans[i][j] = \"W\" if not curr else \"B\"\n                ans[i+1][j] = \"W\" if curr else \"B\"\n                curr ^= 1\r```", "generated_tokens": 50, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_007777", "reply": "```python\nx < 2 * y\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_000532", "reply": "```python\ndist[i][j] == mindist[i]\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_002940", "reply": "```python\n(1 << (k + 1)) <= bigger - smaller\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_004278", "reply": "```python\n            ee+=1;cc-=1\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003528", "reply": "```python\n                arr.append(1)\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_003686", "reply": "```python\ncd+nw<res[nn]\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003248", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003701", "reply": "```python\n print(p[-1])\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003699", "reply": "```python\n  print(\"A\" if s.count(\"A\") > s.count(\"B\") else \"B\")\n```", "generated_tokens": 29, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003035", "reply": "```python\nlt.append(list(map(int,input().split())))\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_004256", "reply": "```python\n            a[i] ^= rd[a[i]]\r```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003860", "reply": "```python\ncontinue\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_002765", "reply": "```python\nANS[i][j]=\"B\"\n                    ANS[i+1][j]=\"W\"\n```", "generated_tokens": 26, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_008234", "reply": "```python\nG[1 - j][i] == 1\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_003918", "reply": "```python\n        if a[i] <= after: continue\n        res += math.ceil(a[i] / after) - 1\n        after = after\n```", "generated_tokens": 39, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_001301", "reply": "```python\n                break\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "control_completion_000198", "reply": "```python\nabs(m1 + m3 + m2) <= b3\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_003362", "reply": "```python\np2 += 1\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "control_completion_005960", "reply": "```python\nma[i] > rr\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "control_completion_008236", "reply": "```python\ni + 2 < N and G[1 - j][i + 2]\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "control_completion_008430", "reply": "```python\nsub.endswith(\"0\")\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_002725", "reply": "```python\nz+=1\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_003361", "reply": "```python\ni += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_002256", "reply": "```python\ncount+=1\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_000811", "reply": "```python\n  return self.parents[x]=self.find(self.parents[x])\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_003678", "reply": "```python\nself.data[idx] += x\n            idx += idx & -idx\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "control_completion_000907", "reply": "```python\nbs == rs\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "control_completion_002945", "reply": "```python\nl & 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_001784", "reply": "```python\nreturn True\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.601}
+{"id": "block_completion_v2_000952", "reply": "```python\nvalue, index = stack.pop()\n            y[index] = i\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_002897", "reply": "```python\n            k -= 1\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_003794", "reply": "```python\n            continue\n\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "control_completion_002703", "reply": "```python\nb[imax] < a[i+1]\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_003920", "reply": "```python\ncut=(a[-j-1]//base)+1\n            ans+=cut-1\n            base=a[-j-1]//cut\n```", "generated_tokens": 35, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_004026", "reply": "```python\nans += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "control_completion_002704", "reply": "```python\nb[imin] < a[i]\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_004171", "reply": "```python\nprint(ans, c(k, remain))\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "control_completion_003109", "reply": "```python\ngrafo[y]\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_001493", "reply": "```python\nreturn (((g + 1) // 2) - 1) *\n```", "generated_tokens": 22, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_001319", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_003234", "reply": "```python\ncontinue\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_002614", "reply": "```python\nreturn \"NO\"\r\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_001765", "reply": "```python\nresult.append(\"Tsondu\")\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "control_completion_003112", "reply": "```python\nx!=s\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_003096", "reply": "```python\nans[i] = segs[j+1][0]\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.631}
+{"id": "block_completion_v2_003575", "reply": "```python\nstack.append(~v)\n                stack.append(v)\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_004451", "reply": "```python\nl += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_004416", "reply": "```python\nres1+=s(T,l,r,w)*(j*(j-1)//2)\n```", "generated_tokens": 27, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_003235", "reply": "```python\nD.append(num) ; P[num] = n\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "control_completion_002216", "reply": "```python\ndepth[nei] == -1\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "control_completion_002943", "reply": "```python\ngetMax(st, m, min(y1, y2), max(y1, y2)) >= max_x\n```", "generated_tokens": 32, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_002392", "reply": "```python\ndp[i][j] = max(dp[i][j], dp[i - 1][j])\r```", "generated_tokens": 30, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_002113", "reply": "```python\nprint('NO')\n          return\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_001070", "reply": "```python\nx //= j\n                count += 1\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "control_completion_002237", "reply": "```python\nv != par\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_001069", "reply": "```python\nfactors[i] = 1\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_000537", "reply": "```python\nfixed[0] += 1\n                fixed[f * d + k - p + 1] -= 1\n```", "generated_tokens": 31, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_001111", "reply": "```python\na.add(b[i])\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_003738", "reply": "```python\nprint(\"NO\")\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_000384", "reply": "```python\nres[c][m - c] = yhi\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_002116", "reply": "```python\nres[i] = \"YES\"\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.428}
+{"id": "block_completion_v2_000720", "reply": "```python\ncontinue\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "control_completion_000535", "reply": "```python\ni in nod\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "control_completion_007764", "reply": "```python\nnot ins2[x]\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "control_completion_000534", "reply": "```python\ni==j\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "control_completion_002441", "reply": "```python\nparents[boi] == -1\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_001279", "reply": "```python\nr[i] = r[i] * cnt[i + j] % MOD\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_004158", "reply": "```python\ncnt1[j]=0\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_000554", "reply": "```python\nrete[i] = (rete[i] + C(lq-j-1, k-1)) % mod\n```", "generated_tokens": 32, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_003739", "reply": "```python\nheappop(left)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_004156", "reply": "```python\n        out = invs(skip - lv)\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_001110", "reply": "```python\nans = min(ans, i)\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_002011", "reply": "```python\nprintt('2 1' + '\\n')\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "control_completion_001185", "reply": "```python\nele=='B' and a>=val//2:a-=(val//2)\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_002210", "reply": "```python\nall_neighbours_done = False\n                stack.append(neighbor)\n```", "generated_tokens": 21, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_004489", "reply": "```python\nfreq += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "block_completion_v2_002114", "reply": "```python\nans = 'NO'\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.783}
+{"id": "control_completion_005483", "reply": "```python\nv == x2 - x1 + 1\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_004319", "reply": "```python\nln.append(rt[j]-st.pop())\r\n            j+=1\n```", "generated_tokens": 24, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_001848", "reply": "```python\ndist[nmsk] = d + w\r                heappush(h, (dist[nmsk], nmsk))\r```", "generated_tokens": 32, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_001986", "reply": "```python\nindices[v] = []\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_003098", "reply": "```python\nt &= l\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_001849", "reply": "```python\n                k = j ^ y[i][0] ^ y[i][1]\n                if o[k] > o[j] + z[i]:\n                    o[k] = o[j] + z[i]\n```", "generated_tokens": 57, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_002299", "reply": "```python\ncnt+=1\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_002730", "reply": "```python\nans, bestK = cur, K\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_002585", "reply": "```python\nans[start] = 1\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "control_completion_004760", "reply": "```python\no1 > o2\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "control_completion_005926", "reply": "```python\nd[i] != 0 and d[i] != b[i]\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "control_completion_006948", "reply": "```python\nupper - lower > 1\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_001580", "reply": "```python\nd[a] = []\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_002710", "reply": "```python\nj -= 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_000873", "reply": "```python\nreturn None\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "block_completion_v2_001496", "reply": "```python\ndp[i][j][k] |= dp[i][j][k - 1]\n```", "generated_tokens": 26, "terminated": true, "malformed": false, "seconds": 0.674}
+{"id": "control_completion_003113", "reply": "```python\nchild not in nodes\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_003461", "reply": "```python\nf[tl].pop()\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_003114", "reply": "```python\nchild not in nodes\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001582", "reply": "```python\nans = max(ans, ans + l[i][j])\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_002579", "reply": "```python\ni!=0 andb[i]-b[i-1]\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_005486", "reply": "```python\nrow[x] == 0\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_003520", "reply": "```python\nactive_rain.remove(-idx - 1)\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_003193", "reply": "```python\nprint(i+1)\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001987", "reply": "```python\nmaxs2[c[i]] = step\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001707", "reply": "```python\n            u, v, k = map(int,line)\n            if minpath[v - 1] <= k <= maxpath[v - 1]:\n                print(\"Yes\")\n            else:\n                print(\"No\")\n```", "generated_tokens": 57, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_001186", "reply": "```python\nc[2 + ord(i[0]) - ord('A')] >= cnt\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_002580", "reply": "```python\ncur == minV\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_005573", "reply": "```python\ngroup[v] == 0\n```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_002245", "reply": "```python\nself.depth[v] is None\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "control_completion_002246", "reply": "```python\nself.parent[p][i] is not None\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_003397", "reply": "```python\nes_valido = False\n                break\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.453}
+{"id": "block_completion_v2_001873", "reply": "```python\nans -= 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_001556", "reply": "```python\np2.append((x,y))\n```", "generated_tokens": 15, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_004028", "reply": "```python\n                    break\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_004473", "reply": "```python\nreturn 0\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_002597", "reply": "```python\ndp[u] = dp[v] + (h[v] > h[u])\n                        mx = max(mx, dp[u] * k + h[u])\n                        Q.append(u)\n```", "generated_tokens": 53, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "control_completion_008615", "reply": "```python\n(w>>k)&1\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_003649", "reply": "```python\ndrawcutoff = i + 1\r```", "generated_tokens": 13, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_003138", "reply": "```python\nprime_cnt[p] = prime_cnt.get(p,0) + 1\r\nx //= p\n```", "generated_tokens": 32, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "control_completion_005447", "reply": "```python\n0<=i<=n\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "control_completion_001029", "reply": "```python\np<self._mx\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "control_completion_001028", "reply": "```python\nx < self._mx\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "control_completion_005124", "reply": "```python\nup\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "control_completion_001911", "reply": "```python\n(l >> i) & 1\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_000868", "reply": "```python\nparent[w] = v\n                    stack.append(w)\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_003168", "reply": "```python\nans[j], ans[r - temp] = ans[temp], ans[j]\n```", "generated_tokens": 25, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "control_completion_001187", "reply": "```python\nf == 'A'\n```", "generated_tokens": 11, "terminated": true, "malformed": false, "seconds": 0.655}
+{"id": "block_completion_v2_001955", "reply": "```python\nbreak\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003590", "reply": "```python\nd[key] = [0, 0]\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_001869", "reply": "```python\nret *= (used[k] + v + 1) // (v + 1)\n```", "generated_tokens": 26, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_002312", "reply": "```python\nans.append((i, j))\n            break\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_001874", "reply": "```python\nans-=(x[sorted_by_importance[last_index]]==1)\n            included[sorted_by_importance[last_index]]=True\n```", "generated_tokens": 39, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_001488", "reply": "```python\nnewDp[i] = min(newDp[i], n+1)\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_000832", "reply": "```python\ncnt = cnt + 1\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_002313", "reply": "```python\nf[o]=max(f[o],s)\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003016", "reply": "```python\n                            newcurrent.add(num)\n\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_001957", "reply": "```python\nhigh = mid\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003850", "reply": "```python\ncontinue\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_003139", "reply": "```python\nput(\"NO\")\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_000890", "reply": "```python\nparent[w] = v\n                stack.append(w)\n```", "generated_tokens": 20, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_008619", "reply": "```python\n(value[i][zero[i].find(u)] & value[i][zero[i].find(v)])\n```", "generated_tokens": 32, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "block_completion_v2_000637", "reply": "```python\noops = nearest_zero\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_008618", "reply": "```python\nbit(w, 0) == 0\n```", "generated_tokens": 16, "terminated": true, "malformed": false, "seconds": 0.435}
+{"id": "control_completion_004219", "reply": "```python\nnot chkb(k[0],k[1])\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_000743", "reply": "```python\ndp[child[a][j]]=dp[a]\n```", "generated_tokens": 18, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_000545", "reply": "```python\nd2[j] += x\n                    d2[j] %= 26\n                    s2.set(j,d2[j])\n```", "generated_tokens": 38, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_000584", "reply": "```python\n            return None\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_003049", "reply": "```python\nans ^= curr\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_002471", "reply": "```python\n        res=res-(a[i]-a[i-1]-1)//d-(a[i+1]-a[i]-1)//d+1\n        elif res==0: res += 1\n```", "generated_tokens": 51, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_003048", "reply": "```python\nxor1 ^= num\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "control_completion_005459", "reply": "```python\nprev_idx == -1\n```", "generated_tokens": 12, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_002470", "reply": "```python\nc += 1\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_003017", "reply": "```python\ngroup[root].append(val)\n                        maxi_last[root] = max(maxi_last[root],last[val])\n                        x_to_g[val] = root\n```", "generated_tokens": 49, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "control_completion_008491", "reply": "```python\ntt[0] == l[0] + r[0] + 1\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "control_completion_008493", "reply": "```python\ntt[0] == l[0] + r[0] + 1\n```", "generated_tokens": 23, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_002650", "reply": "```python\nself.bit[j] += self.bit[i]\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_003735", "reply": "```python\nminimum = min(minimum, distance + sumdistances[neighbor])\n```", "generated_tokens": 19, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "control_completion_008510", "reply": "```python\nindices[v1] and indices[v2]\n```", "generated_tokens": 17, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_000499", "reply": "```python\ndp[l][r] = min(dp[l][r], dp[l][last - 1] + X)\n                last -= 1\n```", "generated_tokens": 39, "terminated": true, "malformed": false, "seconds": 0.538}
+{"id": "block_completion_v2_003292", "reply": "```python\nst.append(C[u])\n```", "generated_tokens": 14, "terminated": true, "malformed": false, "seconds": 0.852}
+{"id": "block_completion_v2_003905", "reply": "```python\nreturn to\n```", "generated_tokens": 8, "terminated": true, "malformed": false, "seconds": 0.852}
+{"id": "block_completion_v2_002119", "reply": "```python\nrem[ind]\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.852}
+{"id": "control_completion_005831", "reply": "```python\nword != 0\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.852}
+{"id": "control_completion_005834", "reply": "```python\nword != 0\n```", "generated_tokens": 10, "terminated": true, "malformed": false, "seconds": 0.852}
+{"id": "block_completion_v2_004005", "reply": "```python\nitv.append((ent[n], ent[k] - 1))\n                        itv.append((out[k] + 1, out[n]))\n```", "generated_tokens": 42, "terminated": true, "malformed": false, "seconds": 0.852}
+{"id": "block_completion_v2_002532", "reply": "```python\nlo = mi\n```", "generated_tokens": 9, "terminated": true, "malformed": false, "seconds": 0.852}
+{"id": "block_completion_v2_003422", "reply": "```python\n)\n```", "generated_tokens": 7, "terminated": true, "malformed": false, "seconds": 0.852}

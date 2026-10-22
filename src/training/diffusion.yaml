@@ -1,0 +1,65 @@
+recipe: DiffusionGemmaSFTRecipe
+
+model:
+  _target_: nemo_automodel.NeMoAutoModelForCausalLM.from_pretrained
+  torch_dtype: bfloat16
+  canvas_length: 256
+  self_conditioning: true
+  freeze_router: true
+  backend:
+    _target_: nemo_automodel.components.models.common.BackendConfig
+    attn: sdpa
+    linear: torch
+    rms_norm: torch_fp32
+    experts: torch_mm
+    dispatcher: deepep
+    enable_hf_state_dict_adapter: true
+    enable_fsdp_optimizations: true
+
+peft:
+  target_modules:
+    - "*self_attn.q_proj"
+    - "*self_attn.k_proj"
+    - "*self_attn.v_proj"
+    - "*self_attn.o_proj"
+    - "*.mlp.gate_proj"
+    - "*.mlp.up_proj"
+    - "*.mlp.down_proj"
+    - "*self_conditioning.gate_proj"
+    - "*self_conditioning.up_proj"
+    - "*self_conditioning.down_proj"
+
+distributed:
+  pp_size: 1
+  autocast_dtype: bfloat16
+  offload_policy: null
+  moe:
+    reshard_after_forward: false
+
+dllm:
+  mode: block_diffusion
+  block_size: 256
+  vocab_size: 262144
+  eps: 0.001
+  pad_block_size: 256
+  pad_seq_len_divisible: 256
+  encoder_loss_weight: 0.0
+  self_conditioning_p: 0.5
+
+optimizer:
+  betas: [0.95, 0.99]
+  weight_decay: 1.0e-4
+
+dataset:
+  unshifted: true
+  tokenizer: {}
+
+dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn: nemo_automodel.components.datasets.utils.default_collater
+  shuffle: true
+
+validation_dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  collate_fn: nemo_automodel.components.datasets.utils.default_collater
+  shuffle: false

@@ -1,0 +1,72 @@
+recipe: FinetuneRecipeForVLM
+
+rng:
+  _target_: nemo_automodel.components.training.rng.StatefulRNG
+  seed: 42
+  ranked: true
+
+model:
+  _target_: nemo_automodel.NeMoAutoModelForImageTextToText.from_pretrained
+  torch_dtype: torch.bfloat16
+  trust_remote_code: true
+  attn_implementation: sdpa
+  backend:
+    _target_: nemo_automodel.components.models.common.BackendConfig
+    attn: te
+    linear: te
+    rms_norm: te
+    dispatcher: deepep
+    fake_balanced_gate: false
+    enable_hf_state_dict_adapter: true
+    enable_fsdp_optimizations: true
+  text_config:
+    use_cache: false
+
+processor:
+  padding_side: right
+
+freeze_config:
+  freeze_vision_tower: true
+  freeze_audio_tower: true
+  freeze_language_model: false
+
+distributed:
+  multimodal:
+    frozen_sharding: per_layer
+
+peft:
+  target_modules:
+    - "*self_attn.q_proj"
+    - "*self_attn.k_proj"
+    - "*self_attn.v_proj"
+    - "*self_attn.o_proj"
+    - "*.mlp.gate_proj"
+    - "*.mlp.up_proj"
+    - "*.mlp.down_proj"
+
+optimizer:
+  betas: [0.9, 0.95]
+  weight_decay: 0.01
+
+dataset:
+  tokenizer:
+    _target_: transformers.AutoTokenizer.from_pretrained
+  padding: do_not_pad
+
+dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  num_workers: 4
+  persistent_workers: true
+  pin_memory: true
+  shuffle: true
+  collate_fn:
+    _target_: training.collate.padded
+
+validation_dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  num_workers: 4
+  persistent_workers: true
+  pin_memory: true
+  shuffle: false
+  collate_fn:
+    _target_: training.collate.padded

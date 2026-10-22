@@ -1,0 +1,152 @@
+{
+ "settings": {
+  "seed": 0,
+  "budget": {
+   "shift_register": 60000,
+   "shift_register_single": 12000,
+   "chain": 12000,
+   "config_patch": 12000
+  },
+  "held_out_each": 1000,
+  "held_out_few": 100,
+  "gold_share": 7,
+  "shift_register": {
+   "machines": [
+    "shift_register",
+    "shift_register_single"
+   ],
+   "width": 16,
+   "horizons": [
+    1,
+    24
+   ],
+   "rungs": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    12,
+    16,
+    24
+   ],
+   "letters": 25,
+   "split": "MD5(start) mod 8: val = 0, test = 1, train = 2..7",
+   "paired_machines": true
+  },
+  "chain": {
+   "source": "nocot-bench datagen/banks/chain.py",
+   "commit": "634d7de507f5ca1eae12f24ac5b151a42e223dec",
+   "modulus": 20,
+   "horizons": [
+    3,
+    8
+   ],
+   "rungs": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "split": "MD5(prompt) mod 8: val = 0, test = 1, train = 2..7"
+  },
+  "config_patch": {
+   "source": "nocot-bench datagen/banks/cfgpatch.py",
+   "commit": "634d7de507f5ca1eae12f24ac5b151a42e223dec",
+   "vmax": 200,
+   "n_distract": 6,
+   "horizons": [
+    2,
+    12
+   ],
+   "rungs": [
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "split": "MD5(prompt) mod 8: val = 0, test = 1, train = 2..7"
+  }
+ },
+ "train": {
+  "rows": {
+   "shift_register": 60000,
+   "shift_register_single": 12000,
+   "chain": 12000,
+   "config_patch": 12000
+  },
+  "longest answer in tokens": 16
+ },
+ "val": {
+  "rows": {
+   "shift_register": 900,
+   "shift_register_single": 900,
+   "chain": 600,
+   "config_patch": 700
+  },
+  "longest answer in tokens": 16,
+  "chain floor by rung": {
+   "3": 0.1,
+   "4": 0.15,
+   "5": 0.15,
+   "6": 0.12,
+   "7": 0.15,
+   "8": 0.13
+  },
+  "config_patch floor by rung": {
+   "2": 0.05,
+   "3": 0.07,
+   "4": 0.05,
+   "6": 0.03,
+   "8": 0.03,
+   "10": 0.03,
+   "12": 0.03
+  }
+ },
+ "test": {
+  "rows": {
+   "shift_register": 9000,
+   "shift_register_single": 9000,
+   "chain": 6000,
+   "config_patch": 7000
+  },
+  "longest answer in tokens": 16,
+  "chain floor by rung": {
+   "3": 0.1,
+   "4": 0.106,
+   "5": 0.101,
+   "6": 0.103,
+   "7": 0.1,
+   "8": 0.117
+  },
+  "config_patch floor by rung": {
+   "2": 0.031,
+   "3": 0.027,
+   "4": 0.024,
+   "6": 0.019,
+   "8": 0.017,
+   "10": 0.016,
+   "12": 0.018
+  }
+ },
+ "files": {
+  "test.jsonl": {
+   "rows": 31000,
+   "sha256": "8f2df6fc4fb954626f5d316a191b68f5ee526985df17ed44b4332c47eea4c14b"
+  },
+  "train.jsonl": {
+   "rows": 96000,
+   "sha256": "ec64731d186208df1d64148a853b4bc3f37b8c73110ead8a42e18f8857490581"
+  },
+  "val.jsonl": {
+   "rows": 3100,
+   "sha256": "a40363cf22c64956533c967989372cb1b929a4072bbbc5a9f2cb81347b0bc1af"
+  }
+ }
+}

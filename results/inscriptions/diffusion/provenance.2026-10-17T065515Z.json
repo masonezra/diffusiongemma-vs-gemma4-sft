@@ -1,0 +1,194 @@
+{
+ "host": "1bfaebf01669",
+ "started": "2026-10-17T06:55:15Z",
+ "versions": {
+  "nemo-automodel": "0.5.0",
+  "transformers": "5.12.1",
+  "torch": "2.13.0a0+8145d630e8.nv26.6.54250401"
+ },
+ "config": {
+  "seed": 42,
+  "step_scheduler": {
+   "log_remote_every_steps": 10,
+   "num_epochs": 1,
+   "global_batch_size": 64,
+   "local_batch_size": 8,
+   "max_steps": 2657,
+   "ckpt_every_steps": 265,
+   "val_every_steps": 265
+  },
+  "dist_env": {
+   "backend": "nccl",
+   "timeout_minutes": 60
+  },
+  "peft": {
+   "_target_": "nemo_automodel.components._peft.lora.PeftConfig",
+   "match_all_linear": false,
+   "lora_dtype": "torch.bfloat16",
+   "target_modules": [
+    "*self_attn.q_proj",
+    "*self_attn.k_proj",
+    "*self_attn.v_proj",
+    "*self_attn.o_proj",
+    "*.mlp.gate_proj",
+    "*.mlp.up_proj",
+    "*.mlp.down_proj",
+    "*self_conditioning.gate_proj",
+    "*self_conditioning.up_proj",
+    "*self_conditioning.down_proj"
+   ],
+   "dim": 64,
+   "alpha": 128
+  },
+  "loss_fn": {
+   "_target_": "nemo_automodel.components.loss.masked_ce.MaskedCrossEntropy"
+  },
+  "checkpoint": {
+   "enabled": true,
+   "model_save_format": "safetensors",
+   "save_consolidated": false,
+   "checkpoint_dir": "/workspace/checkpoints/inscriptions/diffusion"
+  },
+  "distributed": {
+   "strategy": "fsdp2",
+   "dp_size": null,
+   "tp_size": 1,
+   "cp_size": 1,
+   "ep_size": 1,
+   "sequence_parallel": false,
+   "activation_checkpointing": true,
+   "defer_fsdp_grad_sync": false,
+   "mp_policy": {
+    "param_dtype": "bfloat16",
+    "reduce_dtype": "float32",
+    "output_dtype": "float32"
+   },
+   "pp_size": 1,
+   "autocast_dtype": "bfloat16",
+   "offload_policy": null,
+   "moe": {
+    "reshard_after_forward": false
+   }
+  },
+  "optimizer": {
+   "_target_": "torch.optim.adamw.AdamW",
+   "eps": 1e-08,
+   "lr": 0.00015,
+   "betas": [
+    0.95,
+    0.99
+   ],
+   "weight_decay": 0.0001
+  },
+  "clip_grad_norm": {
+   "max_norm": 1.0
+  },
+  "lr_scheduler": {
+   "init_lr": 0.0,
+   "lr_decay_style": "cosine",
+   "min_lr": 1.5e-05,
+   "lr_warmup_steps": 80
+  },
+  "dataset": {
+   "_target_": "nemo_automodel.components.datasets.llm.chat_dataset.ChatDataset",
+   "split": "train",
+   "shuffle_seed": 42,
+   "truncation": false,
+   "mask_history": true,
+   "unshifted": true,
+   "tokenizer": {
+    "pretrained_model_name_or_path": "google/diffusiongemma-26B-A4B-it"
+   },
+   "path_or_dataset_id": "/workspace/alpha/dataset/inscriptions/train.jsonl",
+   "seq_length": 768,
+   "chat_template": "/workspace/alpha/src/common/diffusion_gemma_chat_template.jinja"
+  },
+  "recipe": "DiffusionGemmaSFTRecipe",
+  "model": {
+   "_target_": "nemo_automodel._transformers.auto_model._BaseNeMoAutoModelClass.from_pretrained",
+   "torch_dtype": "bfloat16",
+   "canvas_length": 256,
+   "self_conditioning": true,
+   "freeze_router": true,
+   "backend": {
+    "_target_": "nemo_automodel.components.models.common.utils.BackendConfig",
+    "attn": "sdpa",
+    "linear": "torch",
+    "rms_norm": "torch_fp32",
+    "experts": "torch_mm",
+    "dispatcher": "torch",
+    "enable_hf_state_dict_adapter": true,
+    "enable_fsdp_optimizations": true
+   },
+   "pretrained_model_name_or_path": "google/diffusiongemma-26B-A4B-it"
+  },
+  "dllm": {
+   "mode": "block_diffusion",
+   "block_size": 256,
+   "vocab_size": 262144,
+   "eps": 0.001,
+   "pad_block_size": 256,
+   "pad_seq_len_divisible": 256,
+   "encoder_loss_weight": 1.0,
+   "self_conditioning_p": 0.5
+  },
+  "dataloader": {
+   "_target_": "torchdata.stateful_dataloader.stateful_dataloader.StatefulDataLoader",
+   "collate_fn": "nemo_automodel.components.datasets.utils.default_collater",
+   "shuffle": true
+  },
+  "validation_dataloader": {
+   "_target_": "torchdata.stateful_dataloader.stateful_dataloader.StatefulDataLoader",
+   "collate_fn": "nemo_automodel.components.datasets.utils.default_collater",
+   "shuffle": false
+  },
+  "validation_dataset": {
+   "_target_": "nemo_automodel.components.datasets.llm.chat_dataset.ChatDataset",
+   "split": "train",
+   "shuffle_seed": 42,
+   "truncation": false,
+   "mask_history": true,
+   "unshifted": true,
+   "tokenizer": {
+    "pretrained_model_name_or_path": "google/diffusiongemma-26B-A4B-it"
+   },
+   "path_or_dataset_id": "/workspace/alpha/dataset/inscriptions/val.jsonl",
+   "seq_length": 768,
+   "chat_template": "/workspace/alpha/src/common/diffusion_gemma_chat_template.jinja"
+  }
+ },
+ "lora": {
+  "parameters": 75288576,
+  "dtype": "torch.bfloat16",
+  "modules": [
+   "model.layers.N.mlp._checkpoint_wrapped_module.down_proj",
+   "model.layers.N.mlp._checkpoint_wrapped_module.gate_proj",
+   "model.layers.N.mlp._checkpoint_wrapped_module.up_proj",
+   "model.layers.N.self_attn._checkpoint_wrapped_module.k_proj",
+   "model.layers.N.self_attn._checkpoint_wrapped_module.o_proj",
+   "model.layers.N.self_attn._checkpoint_wrapped_module.q_proj",
+   "model.layers.N.self_attn._checkpoint_wrapped_module.v_proj",
+   "model.self_conditioning.down_proj",
+   "model.self_conditioning.gate_proj",
+   "model.self_conditioning.up_proj"
+  ]
+ },
+ "template_sha256": "a1064734fd427d4c2648de366fb0b925b563d0f0ec20e97e0fcf68e8742f35ff",
+ "first_row_token_ids_sha256": "7c2ffe631e47e878e741ffeb8e72770a345c118c2310368ad0751d85dd1d8505",
+ "dataset_sha256": {
+  "dataset": "2f3e399cb5e93b7e40837cdbe9f995eccf9765c63d177882932a0d60ad38579d",
+  "validation_dataset": "0fd2172ad103ca153212f8606c7c5d8b37507661bda1263e6135f848586962ba"
+ },
+ "code_sha256": {
+  "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ar.yaml": "ca4ca6b87dd881e3b91be0c07146835b67cba1b189521f27bc05bf608951edf2",
+  "collate.py": "8bee6b8b1057f8e39c40eec14b48380f72fee8829683daf460118f407b13d518",
+  "diffusion.yaml": "618f0028ccfdfe7e7de10e2467544bb783ab5e79f953d88b34186152adce1e30",
+  "provenance.py": "56b2f4b5296a9f0a71690ad555aab79907ae82e89c3cc01a839abc46bcdcd44f",
+  "recipe.py": "ba407758dff972f8138774e2447fcedf82f1e8b6fab2650ac9936ba1db0aaf06",
+  "self_conditioning.py": "464904275f39b385652e700d383d72b1100040201ee6ece0aeae47c44775f283",
+  "shared.yaml": "3a0cd19c8a2681111fe784b5335a6b18b84ce66f32aea85ce5071931eb301c6f",
+  "train.py": "d7037f19b60a57eea037a13b278e8cf0d18d3542789fc3c78db3b086365f8d87",
+  "recipe.yaml": "c81de7f32990bc1a3c09cb31b3ffa8e1918c9bdf357173a520aa793beb16bb5f"
+ }
+}

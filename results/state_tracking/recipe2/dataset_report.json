@@ -1,0 +1,279 @@
+{
+ "settings": {
+  "task": "sudoku",
+  "seed": 0,
+  "held_out_each": 1024,
+  "held_out_few": 250,
+  "gold_share": 7,
+  "chain": {
+   "source": "nocot-bench datagen/banks/chain.py",
+   "commit": "634d7de507f5ca1eae12f24ac5b151a42e223dec",
+   "modulus": 20,
+   "evaluation_only": true,
+   "horizons": [
+    3,
+    8
+   ],
+   "rungs": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "split": "MD5(prompt) mod 8: val = 0, test = 1, train = 2..7"
+  },
+  "config_patch": {
+   "source": "nocot-bench datagen/banks/cfgpatch.py",
+   "commit": "634d7de507f5ca1eae12f24ac5b151a42e223dec",
+   "vmax": 200,
+   "n_distract": 6,
+   "evaluation_only": true,
+   "horizons": [
+    2,
+    12
+   ],
+   "rungs": [
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    12
+   ],
+   "split": "MD5(prompt) mod 8: val = 0, test = 1, train = 2..7"
+  },
+  "sudoku": {
+   "source": "Ritvik19/Sudoku-Dataset train_0.parquet, sets 9m and 3m (mirrors of Kaggle rohanrao/sudoku and radcliffe/3-million-sudoku-puzzles-with-ratings, CC0)",
+   "depth_bands": [
+    [
+     1,
+     3
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     13,
+     99
+    ]
+   ],
+   "not_singles_tier": "val and test only",
+   "train_rows": 32000,
+   "instruction": "Solve the following Sudoku puzzle. Empty cells are represented by 0. Output ONLY the solved puzzle immediately as a 9x9 grid of numbers separated by spaces. Do not include ####, explanations, or any other text.",
+   "split": "MD5(relabelled solution) mod 8: val = 0, test = 1, train = 2..7",
+   "answer_tokens": 161,
+   "nocot_evaluation_only": true
+  }
+ },
+ "train": {
+  "rows": {
+   "sudoku": 32000
+  },
+  "longest answer in tokens": 161,
+  "rows by depth": {
+   "1": 179,
+   "2": 2259,
+   "3": 3962,
+   "4": 2985,
+   "5": 2219,
+   "6": 1196,
+   "7": 2160,
+   "8": 1919,
+   "9": 2321,
+   "10": 2083,
+   "11": 2228,
+   "12": 2089,
+   "13": 2365,
+   "14": 1694,
+   "15": 1041,
+   "16": 624,
+   "17": 350,
+   "18": 186,
+   "19": 85,
+   "20": 35,
+   "21": 13,
+   "22": 6,
+   "23": 1
+  },
+  "rows by band": {
+   "band 1": 6400,
+   "band 2": 6400,
+   "band 3": 6400,
+   "band 4": 6400,
+   "band 5": 6400
+  },
+  "rows by source": {
+   "3m": 15805,
+   "9m": 16195
+  },
+  "rows by givens bin": {
+   "30-39": 9421,
+   "< 30": 15992,
+   ">= 40": 6587
+  }
+ },
+ "val": {
+  "rows": {
+   "sudoku_hard": 250,
+   "sudoku": 1250,
+   "chain": 384,
+   "config_patch": 448
+  },
+  "longest answer in tokens": 161,
+  "rows by depth": {
+   "1": 6,
+   "2": 84,
+   "3": 160,
+   "4": 107,
+   "5": 88,
+   "6": 55,
+   "7": 79,
+   "8": 76,
+   "9": 95,
+   "10": 80,
+   "11": 94,
+   "12": 76,
+   "13": 94,
+   "14": 71,
+   "15": 36,
+   "16": 27,
+   "17": 7,
+   "18": 9,
+   "19": 4,
+   "20": 1,
+   "23": 1,
+   "search": 250
+  },
+  "rows by band": {
+   "band 1": 250,
+   "band 2": 250,
+   "band 3": 250,
+   "band 4": 250,
+   "band 5": 250,
+   "search": 250
+  },
+  "rows by source": {
+   "3m": 874,
+   "9m": 626
+  },
+  "rows by givens bin": {
+   "30-39": 358,
+   "< 30": 883,
+   ">= 40": 259
+  },
+  "chain floor by rung": {
+   "3": 0.109,
+   "4": 0.141,
+   "5": 0.141,
+   "6": 0.125,
+   "7": 0.141,
+   "8": 0.125
+  },
+  "config_patch floor by rung": {
+   "2": 0.062,
+   "3": 0.047,
+   "4": 0.078,
+   "6": 0.047,
+   "8": 0.062,
+   "10": 0.047,
+   "12": 0.031
+  }
+ },
+ "test": {
+  "rows": {
+   "sudoku": 5120,
+   "sudoku_hard": 1024,
+   "chain": 1536,
+   "config_patch": 1792
+  },
+  "longest answer in tokens": 161,
+  "rows by depth": {
+   "1": 27,
+   "2": 352,
+   "3": 645,
+   "4": 467,
+   "5": 347,
+   "6": 210,
+   "7": 335,
+   "8": 302,
+   "9": 387,
+   "10": 335,
+   "11": 349,
+   "12": 340,
+   "13": 354,
+   "14": 262,
+   "15": 209,
+   "16": 103,
+   "17": 40,
+   "18": 32,
+   "19": 16,
+   "20": 6,
+   "21": 2,
+   "search": 1024
+  },
+  "rows by band": {
+   "band 1": 1024,
+   "band 2": 1024,
+   "band 3": 1024,
+   "band 4": 1024,
+   "band 5": 1024,
+   "search": 1024
+  },
+  "rows by source": {
+   "3m": 3517,
+   "9m": 2627
+  },
+  "rows by givens bin": {
+   "30-39": 1503,
+   "< 30": 3555,
+   ">= 40": 1086
+  },
+  "chain floor by rung": {
+   "3": 0.094,
+   "4": 0.105,
+   "5": 0.109,
+   "6": 0.102,
+   "7": 0.133,
+   "8": 0.129
+  },
+  "config_patch floor by rung": {
+   "2": 0.039,
+   "3": 0.039,
+   "4": 0.035,
+   "6": 0.023,
+   "8": 0.027,
+   "10": 0.027,
+   "12": 0.02
+  }
+ },
+ "files": {
+  "test.jsonl": {
+   "rows": 9472,
+   "sha256": "a7c7e60dc8794fce03eae985e153f905d2b224226334bcd0528f17cf7304bbdb"
+  },
+  "train.jsonl": {
+   "rows": 32000,
+   "sha256": "36aa237ff4e63168ece3eda9817a69f76b18370dad413d5bc9d8b71f96b88c41"
+  },
+  "val.jsonl": {
+   "rows": 2332,
+   "sha256": "624cfb3a7a329e809608c2b424535b88fc33908e7554bd96dcb92e95b63830ac"
+  },
+  "val.sudoku.jsonl": {
+   "rows": 1500,
+   "sha256": "c360b16df1f02fa911f9e9e365cdeb7ac79bf89e31d4b7d35a388dc48067cfb5"
+  }
+ }
+}

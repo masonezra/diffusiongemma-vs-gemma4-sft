@@ -1,0 +1,1 @@
+{"checkpoint": "/workspace/checkpoints/state_tracking-recipe2/diffusion/epoch_0_step_999", "steps": 48, "channel": "full", "hold": false, "donors": true, "trace": false, "states": false, "machines": ["sudoku"], "rungs": [10, 11, 12, 13], "limit": 128, "batch": 16, "gpus": 1, "sampler": "shipped"}

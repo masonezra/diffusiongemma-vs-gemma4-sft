@@ -1,0 +1,12 @@
+global_batch_size: 64
+local_batch_size: 8
+seq_length: 768
+lora_rank: 64
+lora_alpha: 128
+arms:
+  ar:
+    model: ar
+  diffusion:
+    model: diffusion
+    dllm:
+      encoder_loss_weight: 1.0

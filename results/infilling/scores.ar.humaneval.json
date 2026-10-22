@@ -1,0 +1,95 @@
+{
+ "all": {
+  "rows": 600,
+  "pass": 76.3,
+  "exact": 38.0,
+  "similar": 81.6,
+  "length off": 20.0,
+  "pass_interval": {
+   "groups": 136,
+   "low": 70.0,
+   "high": 83.2
+  }
+ },
+ "1 gap": {
+  "rows": 600,
+  "pass": 76.3,
+  "exact": 38.0,
+  "similar": 81.6,
+  "length off": 20.0
+ },
+ "line_span": {
+  "rows": 497,
+  "pass": 77.9,
+  "exact": 37.0,
+  "similar": 82.4,
+  "length off": 18.9
+ },
+ "1 line": {
+  "rows": 181,
+  "pass": 83.4,
+  "exact": 64.1,
+  "similar": 84.1,
+  "length off": 22.4
+ },
+ "fits canvas": {
+  "rows": 599,
+  "pass": 76.3,
+  "exact": 37.9,
+  "similar": 81.6,
+  "length off": 20.0
+ },
+ "within training length": {
+  "rows": 600,
+  "pass": 76.3,
+  "exact": 38.0,
+  "similar": 81.6,
+  "length off": 20.0
+ },
+ "code only": {
+  "rows": 600,
+  "pass": 76.3,
+  "exact": 38.0,
+  "similar": 81.6,
+  "length off": 20.0
+ },
+ "humaneval": {
+  "rows": 600,
+  "pass": 76.3,
+  "exact": 38.0,
+  "similar": 81.6,
+  "length off": 20.0
+ },
+ "random_span": {
+  "rows": 103,
+  "pass": 68.9,
+  "exact": 42.7,
+  "similar": 77.9,
+  "length off": 25.0
+ },
+ "2-4 lines": {
+  "rows": 193,
+  "pass": 81.9,
+  "exact": 34.7,
+  "similar": 84.2,
+  "length off": 18.0
+ },
+ "5+ lines": {
+  "rows": 226,
+  "pass": 65.9,
+  "exact": 19.9,
+  "similar": 77.4,
+  "length off": 19.8
+ },
+ "over canvas": {
+  "rows": 1,
+  "pass": 100.0,
+  "exact": 100.0,
+  "similar": 99.9,
+  "length off": 0.0
+ },
+ "faults": {
+  "unclosed": 0.7,
+  "broken": 8.5
+ }
+}

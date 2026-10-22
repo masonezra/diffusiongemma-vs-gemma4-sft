@@ -1,0 +1,202 @@
+{
+ "host": "1bfaebf01669",
+ "started": "2026-10-17T02:46:05Z",
+ "versions": {
+  "nemo-automodel": "0.5.0",
+  "transformers": "5.12.1",
+  "torch": "2.13.0a0+8145d630e8.nv26.6.54250401"
+ },
+ "config": {
+  "seed": 42,
+  "step_scheduler": {
+   "log_remote_every_steps": 10,
+   "num_epochs": 1,
+   "global_batch_size": 64,
+   "local_batch_size": 8,
+   "max_steps": 2657,
+   "ckpt_every_steps": 265,
+   "val_every_steps": 265
+  },
+  "dist_env": {
+   "backend": "nccl",
+   "timeout_minutes": 60
+  },
+  "peft": {
+   "_target_": "nemo_automodel.components._peft.lora.PeftConfig",
+   "match_all_linear": false,
+   "lora_dtype": "torch.bfloat16",
+   "target_modules": [
+    "*self_attn.q_proj",
+    "*self_attn.k_proj",
+    "*self_attn.v_proj",
+    "*self_attn.o_proj",
+    "*.mlp.gate_proj",
+    "*.mlp.up_proj",
+    "*.mlp.down_proj"
+   ],
+   "dim": 64,
+   "alpha": 128
+  },
+  "loss_fn": {
+   "_target_": "nemo_automodel.components.loss.masked_ce.MaskedCrossEntropy"
+  },
+  "checkpoint": {
+   "enabled": true,
+   "model_save_format": "safetensors",
+   "save_consolidated": false,
+   "checkpoint_dir": "/workspace/checkpoints/inscriptions/ar"
+  },
+  "distributed": {
+   "strategy": "fsdp2",
+   "dp_size": null,
+   "tp_size": 1,
+   "cp_size": 1,
+   "ep_size": 1,
+   "sequence_parallel": false,
+   "activation_checkpointing": true,
+   "defer_fsdp_grad_sync": false,
+   "mp_policy": {
+    "param_dtype": "bfloat16",
+    "reduce_dtype": "float32",
+    "output_dtype": "float32"
+   },
+   "multimodal": {
+    "frozen_sharding": "per_layer"
+   }
+  },
+  "optimizer": {
+   "_target_": "torch.optim.adamw.AdamW",
+   "eps": 1e-08,
+   "lr": 0.00015,
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "weight_decay": 0.01
+  },
+  "clip_grad_norm": {
+   "max_norm": 1.0
+  },
+  "lr_scheduler": {
+   "init_lr": 0.0,
+   "lr_decay_style": "cosine",
+   "min_lr": 1.5e-05,
+   "lr_warmup_steps": 80
+  },
+  "dataset": {
+   "_target_": "nemo_automodel.components.datasets.llm.chat_dataset.ChatDataset",
+   "split": "train",
+   "shuffle_seed": 42,
+   "truncation": false,
+   "mask_history": true,
+   "tokenizer": {
+    "_target_": "transformers.models.auto.tokenization_auto.AutoTokenizer.from_pretrained",
+    "pretrained_model_name_or_path": "google/gemma-4-26B-A4B-it"
+   },
+   "padding": "do_not_pad",
+   "path_or_dataset_id": "/workspace/alpha/dataset/inscriptions/train.jsonl",
+   "seq_length": 768,
+   "chat_template": "/workspace/alpha/src/common/gemma4_chat_template.jinja"
+  },
+  "recipe": "FinetuneRecipeForVLM",
+  "rng": {
+   "_target_": "nemo_automodel.components.training.rng.StatefulRNG",
+   "seed": 42,
+   "ranked": true
+  },
+  "model": {
+   "_target_": "nemo_automodel._transformers.auto_model._BaseNeMoAutoModelClass.from_pretrained",
+   "torch_dtype": "torch.bfloat16",
+   "trust_remote_code": true,
+   "attn_implementation": "sdpa",
+   "backend": {
+    "_target_": "nemo_automodel.components.models.common.utils.BackendConfig",
+    "attn": "te",
+    "linear": "te",
+    "rms_norm": "te",
+    "dispatcher": "torch",
+    "fake_balanced_gate": false,
+    "enable_hf_state_dict_adapter": true,
+    "enable_fsdp_optimizations": true
+   },
+   "text_config": {
+    "use_cache": false
+   },
+   "pretrained_model_name_or_path": "google/gemma-4-26B-A4B-it"
+  },
+  "processor": {
+   "padding_side": "right"
+  },
+  "freeze_config": {
+   "freeze_vision_tower": true,
+   "freeze_audio_tower": true,
+   "freeze_language_model": false
+  },
+  "dataloader": {
+   "_target_": "torchdata.stateful_dataloader.stateful_dataloader.StatefulDataLoader",
+   "num_workers": 4,
+   "persistent_workers": true,
+   "pin_memory": true,
+   "shuffle": true,
+   "collate_fn": {
+    "_target_": "training.collate.padded"
+   }
+  },
+  "validation_dataloader": {
+   "_target_": "torchdata.stateful_dataloader.stateful_dataloader.StatefulDataLoader",
+   "num_workers": 4,
+   "persistent_workers": true,
+   "pin_memory": true,
+   "shuffle": false,
+   "collate_fn": {
+    "_target_": "training.collate.padded"
+   }
+  },
+  "validation_dataset": {
+   "_target_": "nemo_automodel.components.datasets.llm.chat_dataset.ChatDataset",
+   "split": "train",
+   "shuffle_seed": 42,
+   "truncation": false,
+   "mask_history": true,
+   "tokenizer": {
+    "_target_": "transformers.models.auto.tokenization_auto.AutoTokenizer.from_pretrained",
+    "pretrained_model_name_or_path": "google/gemma-4-26B-A4B-it"
+   },
+   "padding": "do_not_pad",
+   "path_or_dataset_id": "/workspace/alpha/dataset/inscriptions/val.jsonl",
+   "seq_length": 768,
+   "chat_template": "/workspace/alpha/src/common/gemma4_chat_template.jinja"
+  }
+ },
+ "lora": {
+  "parameters": 74342400,
+  "dtype": "torch.bfloat16",
+  "modules": [
+   "model.language_model.layers.N.mlp._checkpoint_wrapped_module.down_proj",
+   "model.language_model.layers.N.mlp._checkpoint_wrapped_module.gate_proj",
+   "model.language_model.layers.N.mlp._checkpoint_wrapped_module.up_proj",
+   "model.language_model.layers.N.self_attn._checkpoint_wrapped_module.k_proj",
+   "model.language_model.layers.N.self_attn._checkpoint_wrapped_module.o_proj",
+   "model.language_model.layers.N.self_attn._checkpoint_wrapped_module.q_proj",
+   "model.language_model.layers.N.self_attn._checkpoint_wrapped_module.v_proj"
+  ]
+ },
+ "template_sha256": "943b8917ce2ee9453b5d55cd1aa560274d4fe85e139bec5d5c0247234b05ee34",
+ "first_row_token_ids_sha256": "0ff525feae5a947af916dba24c371632df878ce6ddb2e0e80ef649b35d24123f",
+ "dataset_sha256": {
+  "dataset": "2f3e399cb5e93b7e40837cdbe9f995eccf9765c63d177882932a0d60ad38579d",
+  "validation_dataset": "0fd2172ad103ca153212f8606c7c5d8b37507661bda1263e6135f848586962ba"
+ },
+ "code_sha256": {
+  "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ar.yaml": "ca4ca6b87dd881e3b91be0c07146835b67cba1b189521f27bc05bf608951edf2",
+  "collate.py": "8bee6b8b1057f8e39c40eec14b48380f72fee8829683daf460118f407b13d518",
+  "diffusion.yaml": "618f0028ccfdfe7e7de10e2467544bb783ab5e79f953d88b34186152adce1e30",
+  "provenance.py": "56b2f4b5296a9f0a71690ad555aab79907ae82e89c3cc01a839abc46bcdcd44f",
+  "recipe.py": "ba407758dff972f8138774e2447fcedf82f1e8b6fab2650ac9936ba1db0aaf06",
+  "self_conditioning.py": "464904275f39b385652e700d383d72b1100040201ee6ece0aeae47c44775f283",
+  "shared.yaml": "3a0cd19c8a2681111fe784b5335a6b18b84ce66f32aea85ce5071931eb301c6f",
+  "train.py": "d7037f19b60a57eea037a13b278e8cf0d18d3542789fc3c78db3b086365f8d87",
+  "recipe.yaml": "c81de7f32990bc1a3c09cb31b3ffa8e1918c9bdf357173a520aa793beb16bb5f"
+ }
+}

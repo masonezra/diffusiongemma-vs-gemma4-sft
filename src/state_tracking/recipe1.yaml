@@ -1,0 +1,17 @@
+global_batch_size: 32
+local_batch_size: 4
+seq_length: 1024
+dataset: recipe1
+lora_rank: 64
+lora_alpha: 128
+max_steps: 2000
+arms:
+  ar:
+    model: ar
+  diffusion:
+    model: diffusion
+  diffusion_gradient:
+    model: diffusion
+    self_conditioning_grad: true
+    dllm:
+      self_conditioning_p: 1.0

@@ -1,0 +1,34 @@
+{
+ "groups": 2207,
+ "rows": 2207,
+ "pass": {
+  "first": 62.8,
+  "second": 46.22,
+  "difference": -16.58,
+  "low": -18.62,
+  "high": -14.54,
+  "disagreements": 592,
+  "p": 0.0
+ },
+ "exact": {
+  "first": 26.28,
+  "second": 21.39,
+  "difference": -4.89,
+  "low": -6.44,
+  "high": -3.44
+ },
+ "similar": {
+  "first": 83.46,
+  "second": 80.3,
+  "difference": -3.16,
+  "low": -3.88,
+  "high": -2.46
+ },
+ "length off": {
+  "first": 21.07,
+  "second": 24.01,
+  "difference": 2.93,
+  "low": 1.81,
+  "high": 3.98
+ }
+}

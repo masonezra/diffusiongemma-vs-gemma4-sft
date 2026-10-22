@@ -1,0 +1,95 @@
+{
+ "all": {
+  "rows": 600,
+  "pass": 64.3,
+  "exact": 47.3,
+  "similar": 77.7,
+  "length off": 21.1,
+  "pass_interval": {
+   "groups": 381,
+   "low": 60.5,
+   "high": 68.5
+  }
+ },
+ "1 gap": {
+  "rows": 600,
+  "pass": 64.3,
+  "exact": 47.3,
+  "similar": 77.7,
+  "length off": 21.1
+ },
+ "control": {
+  "rows": 222,
+  "pass": 69.4,
+  "exact": 49.1,
+  "similar": 80.7,
+  "length off": 21.5
+ },
+ "1 line": {
+  "rows": 472,
+  "pass": 69.1,
+  "exact": 53.4,
+  "similar": 79.6,
+  "length off": 20.7
+ },
+ "fits canvas": {
+  "rows": 600,
+  "pass": 64.3,
+  "exact": 47.3,
+  "similar": 77.7,
+  "length off": 21.1
+ },
+ "within training length": {
+  "rows": 559,
+  "pass": 63.3,
+  "exact": 46.5,
+  "similar": 77.6,
+  "length off": 20.6
+ },
+ "task shown": {
+  "rows": 600,
+  "pass": 64.3,
+  "exact": 47.3,
+  "similar": 77.7,
+  "length off": 21.1
+ },
+ "safim": {
+  "rows": 600,
+  "pass": 64.3,
+  "exact": 47.3,
+  "similar": 77.7,
+  "length off": 21.1
+ },
+ "block": {
+  "rows": 378,
+  "pass": 61.4,
+  "exact": 46.3,
+  "similar": 75.9,
+  "length off": 20.9
+ },
+ "2-4 lines": {
+  "rows": 123,
+  "pass": 48.0,
+  "exact": 26.0,
+  "similar": 71.0,
+  "length off": 22.4
+ },
+ "over training length": {
+  "rows": 41,
+  "pass": 78.0,
+  "exact": 58.5,
+  "similar": 78.5,
+  "length off": 28.5
+ },
+ "5+ lines": {
+  "rows": 5,
+  "pass": 20.0,
+  "exact": 0.0,
+  "similar": 64.9,
+  "length off": 30.1
+ },
+ "faults": {
+  "unclosed": 0.0,
+  "broken": 4.0
+ }
+}

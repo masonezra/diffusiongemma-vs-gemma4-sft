@@ -1,0 +1,192 @@
+{
+ "settings": {
+  "seed": 0,
+  "group_caps": {
+   "codecontests": 10
+  },
+  "group_tries": 3,
+  "copy_share": 0.5,
+  "held_out": {
+   "val": 1000,
+   "test": 5000
+  },
+  "gap_counts": {
+   "1": 40,
+   "2": 35,
+   "3": 25
+  },
+  "gap_weights": {
+   "line_span": 40,
+   "node_span": 30,
+   "random_span": 30
+  },
+  "min_chars": 20,
+  "linked_share": 0.5,
+  "block_share": 0.5,
+  "max_share": 0.5,
+  "max_answer": 240,
+  "max_total": 1700,
+  "revisions": {
+   "deepmind/code_contests": "802411c3010cb00d1b05bad57ca77365a3c699d6",
+   "KodCode/KodCode-V1": "97d81f0695ddd7c5c02bfe16436db9a17a4a21e5",
+   "nvidia/OpenCodeInstruct": "8f3ba5bafe4d6e8db46082cf7ae6741bc370604d",
+   "loubnabnl/humaneval_infilling": "ad46002f24b153968a3d0949e6fa9576780530ba",
+   "gonglinyuan/safim": "be132cc15372e90b6f03a608e77f2d940e384edb",
+   "evalplus/humanevalplus": "d32357cf319e50e9c8d8dab5ea876c72b0fd321b"
+  }
+ },
+ "codecontests": {
+  "read": 1485888,
+  "unsafe": 16505,
+  "duplicate": 14070,
+  "group_full": 1315725,
+  "too_long": 8051,
+  "near_duplicate": 2960,
+  "no_gap": 5898,
+  "benchmark_copy": 8761,
+  "size": 41447,
+  "has_gap_marker": 102,
+  "fails_tests": 20874,
+  "train": 51089,
+  "test": 198,
+  "val": 70,
+  "tests_miss_errors": 6,
+  "answer_fails": 107,
+  "no_parse": 16,
+  "tests_miss_gap": 9
+ },
+ "kodcode": {
+  "read": 484097,
+  "unsafe": 43553,
+  "no_script_tests": 63107,
+  "no_gap": 3347,
+  "size": 76,
+  "too_long": 748,
+  "benchmark_name": 16260,
+  "near_duplicate": 3423,
+  "group_full": 258365,
+  "duplicate": 13798,
+  "benchmark_copy": 444,
+  "fails_tests": 222,
+  "tests_miss_errors": 102,
+  "train": 77537,
+  "test": 2240,
+  "val": 755,
+  "tests_miss_gap": 106,
+  "answer_fails": 13,
+  "special_token": 1
+ },
+ "opencodeinstruct": {
+  "read": 1641305,
+  "group_full": 1252647,
+  "unsafe": 71053,
+  "benchmark_name": 102014,
+  "duplicate": 13192,
+  "no_gap": 4023,
+  "near_duplicate": 4447,
+  "too_long": 1700,
+  "benchmark_copy": 633,
+  "no_function": 9,
+  "fails_tests": 4124,
+  "tests_miss_gap": 383,
+  "answer_fails": 166,
+  "tests_miss_errors": 304,
+  "train": 179616,
+  "test": 5106,
+  "val": 1721,
+  "size": 151,
+  "has_gap_marker": 6,
+  "special_token": 9,
+  "no_parse": 1
+ },
+ "val": {
+  "rows": 1000,
+  "line_span": 294,
+  "codecontests": 70,
+  "1 gaps": 583,
+  "node_span": 148,
+  "2 gaps": 330,
+  "mixed": 310,
+  "3 gaps": 87,
+  "linked": 119,
+  "random_span": 248,
+  "kodcode": 394,
+  "opencodeinstruct": 536
+ },
+ "test": {
+  "rows": 5000,
+  "node_span": 821,
+  "codecontests": 198,
+  "1 gaps": 2793,
+  "mixed": 1591,
+  "3 gaps": 540,
+  "linked": 552,
+  "line_span": 1549,
+  "2 gaps": 1667,
+  "random_span": 1039,
+  "kodcode": 1868,
+  "opencodeinstruct": 2934
+ },
+ "humaneval": {
+  "rows": 8488,
+  "line_span": 6848,
+  "over_canvas": 27,
+  "random_span": 1640
+ },
+ "safim": {
+  "tests_miss_errors": 133,
+  "answer_fails": 59,
+  "rows": 1718,
+  "block": 1057,
+  "over_canvas": 0,
+  "control": 661
+ },
+ "train_dropped": {
+  "held_copy": 25039
+ },
+ "train": {
+  "rows": 287293,
+  "random_span": 59508,
+  "codecontests": 48987,
+  "2 gaps": 95230,
+  "mixed": 95639,
+  "linked": 29063,
+  "node_span": 45915,
+  "line_span": 86231,
+  "1 gaps": 157690,
+  "3 gaps": 34373,
+  "kodcode": 70615,
+  "opencodeinstruct": 167691
+ },
+ "files": {
+  "eval.jsonl": {
+   "rows": 19697,
+   "sha256": "fd26ad93f6568c352965e4724bd55fb4a1bfa433aa801f626c60d6bfe01f7f32"
+  },
+  "test.jsonl": {
+   "rows": 5000,
+   "sha256": "8a1ba731b7978b28a47848401b3222acb5e735a7f10be511df054a534118772a"
+  },
+  "train.jsonl": {
+   "rows": 287293,
+   "sha256": "d2c51da56411684723a7200c11f53694fff87c2a6fed70a186ba33f139b95b19"
+  },
+  "val.jsonl": {
+   "rows": 1000,
+   "sha256": "644937dc18f0c5773af7b87e47886cb80a50205b2401966888e313fb3942406f"
+  }
+ },
+ "humanevalplus": {
+  "read": 8488,
+  "tests_miss_gap": 49,
+  "answer_fails": 1570,
+  "rows": 6869
+ },
+ "panel": {
+  "candidates": 534,
+  "unverified": 84,
+  "too_long": 13,
+  "families": 437,
+  "rows": 2622
+ }
+}

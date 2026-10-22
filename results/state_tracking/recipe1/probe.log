@@ -1,0 +1,18 @@
+2026-10-17T11:25:49Z diffusion step 199 rc=0 | k=1: L 23 E 0 | k=2: L 14 E 0 | k=3: L 13 E 0 | k=4: L 13 E 0 | k=6: L 12 E 0 | k=8: L 9 E 0 | k=12: L 9 E 0 | k=16: L 8 E 0 | k=24: L 6 E 0 | n=900
+2026-10-17T12:25:47Z diffusion step 399 rc=0 | k=1: L 54 E 0 | k=2: L 14 E 0 | k=3: L 15 E 0 | k=4: L 13 E 0 | k=6: L 11 E 0 | k=8: L 10 E 0 | k=12: L 9 E 0 | k=16: L 9 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T12:32:22Z diffusion_gradient step 199.part rc=1 | FileNotFoundError: [Errno 2] No such file or directory: '/workspace/alpha/dataset/state_tracking/runs/val.diffusion.probe.diffusion_gradient.199.part.jsonl'
+2026-10-17T12:45:57Z diffusion_gradient step 199 rc=0 | k=1: L 18 E 0 | k=2: L 13 E 0 | k=3: L 12 E 0 | k=4: L 10 E 0 | k=6: L 11 E 0 | k=8: L 9 E 0 | k=12: L 8 E 0 | k=16: L 8 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T12:59:11Z diffusion_gradient step 399 rc=0 | k=1: L 18 E 0 | k=2: L 14 E 0 | k=3: L 14 E 0 | k=4: L 12 E 0 | k=6: L 11 E 0 | k=8: L 10 E 0 | k=12: L 8 E 0 | k=16: L 8 E 0 | k=24: L 6 E 0 | n=900
+2026-10-17T13:39:39Z diffusion step 599 rc=0 | k=1: L 71 E 2 | k=2: L 16 E 0 | k=3: L 15 E 0 | k=4: L 13 E 0 | k=6: L 13 E 0 | k=8: L 10 E 0 | k=12: L 9 E 0 | k=16: L 9 E 0 | k=24: L 6 E 0 | n=900
+2026-10-17T14:06:14Z diffusion_gradient step 599 rc=0 | k=1: L 37 E 0 | k=2: L 13 E 0 | k=3: L 14 E 0 | k=4: L 12 E 0 | k=6: L 11 E 0 | k=8: L 10 E 0 | k=12: L 8 E 0 | k=16: L 8 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T14:31:21Z diffusion step 799 rc=0 | k=1: L 63 E 1 | k=2: L 14 E 0 | k=3: L 15 E 0 | k=4: L 13 E 0 | k=6: L 12 E 0 | k=8: L 12 E 0 | k=12: L 8 E 0 | k=16: L 9 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T15:00:59Z diffusion_gradient step 799 rc=0 | k=1: L 45 E 0 | k=2: L 15 E 0 | k=3: L 13 E 0 | k=4: L 12 E 0 | k=6: L 11 E 0 | k=8: L 10 E 0 | k=12: L 8 E 0 | k=16: L 9 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T15:28:31Z diffusion step 999 rc=0 | k=1: L 86 E 4 | k=2: L 15 E 0 | k=3: L 14 E 0 | k=4: L 13 E 0 | k=6: L 12 E 0 | k=8: L 11 E 0 | k=12: L 9 E 0 | k=16: L 8 E 0 | k=24: L 6 E 0 | n=900
+2026-10-17T16:19:21Z diffusion_gradient step 999 rc=0 | k=1: L 27 E 0 | k=2: L 15 E 0 | k=3: L 15 E 0 | k=4: L 13 E 0 | k=6: L 12 E 0 | k=8: L 12 E 0 | k=12: L 9 E 0 | k=16: L 9 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T16:34:29Z diffusion step 1199 rc=0 | k=1: L 85 E 2 | k=2: L 16 E 0 | k=3: L 16 E 0 | k=4: L 13 E 0 | k=6: L 12 E 0 | k=8: L 11 E 0 | k=12: L 10 E 0 | k=16: L 9 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T17:25:10Z diffusion_gradient step 1199 rc=0 | k=1: L 60 E 0 | k=2: L 15 E 0 | k=3: L 14 E 0 | k=4: L 13 E 0 | k=6: L 12 E 0 | k=8: L 11 E 0 | k=12: L 9 E 0 | k=16: L 9 E 0 | k=24: L 6 E 0 | n=900
+2026-10-17T17:40:20Z diffusion step 1399 rc=0 | k=1: L 90 E 4 | k=2: L 16 E 0 | k=3: L 15 E 0 | k=4: L 14 E 0 | k=6: L 13 E 0 | k=8: L 11 E 0 | k=12: L 9 E 0 | k=16: L 8 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T18:35:17Z diffusion_gradient step 1399 rc=0 | k=1: L 73 E 0 | k=2: L 15 E 0 | k=3: L 16 E 0 | k=4: L 13 E 0 | k=6: L 12 E 0 | k=8: L 12 E 0 | k=12: L 9 E 0 | k=16: L 8 E 0 | k=24: L 7 E 0 | n=900
+2026-10-17T18:45:20Z diffusion step 1599 rc=0 | k=1: L 90 E 5 | k=2: L 16 E 0 | k=3: L 14 E 0 | k=4: L 13 E 0 | k=6: L 13 E 0 | k=8: L 11 E 0 | k=12: L 9 E 0 | k=16: L 8 E 0 | k=24: L 6 E 0 | n=900
+2026-10-17T19:39:27Z diffusion step 1799 rc=0 | k=1: L 90 E 4 | k=2: L 16 E 0 | k=3: L 16 E 0 | k=4: L 14 E 0 | k=6: L 13 E 0 | k=8: L 11 E 0 | k=12: L 9 E 0 | k=16: L 8 E 0 | k=24: L 6 E 0 | n=900
+2026-10-17T19:46:34Z diffusion_gradient step 1599 rc=0 | k=1: L 86 E 1 | k=2: L 16 E 0 | k=3: L 15 E 0 | k=4: L 14 E 0 | k=6: L 12 E 0 | k=8: L 10 E 0 | k=12: L 8 E 0 | k=16: L 8 E 0 | k=24: L 7 E 0 | n=900

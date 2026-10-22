@@ -1,0 +1,56 @@
+seed: 42
+
+step_scheduler:
+  log_remote_every_steps: 10
+  num_epochs: 1
+
+dist_env:
+  backend: nccl
+  timeout_minutes: 60
+
+peft:
+  _target_: nemo_automodel.components._peft.lora.PeftConfig
+  match_all_linear: false
+  lora_dtype: torch.bfloat16
+
+loss_fn:
+  _target_: nemo_automodel.components.loss.masked_ce.MaskedCrossEntropy
+
+checkpoint:
+  enabled: true
+  model_save_format: safetensors
+  save_consolidated: false
+
+distributed:
+  strategy: fsdp2
+  dp_size: none
+  tp_size: 1
+  cp_size: 1
+  ep_size: 8
+  sequence_parallel: false
+  activation_checkpointing: true
+  defer_fsdp_grad_sync: false
+  mp_policy:
+    param_dtype: bfloat16
+    reduce_dtype: float32
+    output_dtype: float32
+
+optimizer:
+  _target_: torch.optim.AdamW
+  eps: 1.0e-8
+  lr: 1.5e-4
+
+clip_grad_norm:
+  max_norm: 1.0
+
+lr_scheduler:
+  init_lr: 0.0
+  lr_decay_style: cosine
+  min_lr: 1.5e-5
+
+dataset:
+  _target_: nemo_automodel.components.datasets.llm.chat_dataset.ChatDataset
+  split: train
+  shuffle_seed: 42
+  truncation: false
+  mask_history: true

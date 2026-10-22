@@ -1,0 +1,186 @@
+{
+ "all": {
+  "rows": 2622,
+  "pass": 85.0,
+  "exact": 52.1,
+  "similar": 87.8,
+  "length off": 13.8,
+  "pass_interval": {
+   "groups": 437,
+   "low": 83.1,
+   "high": 87.0
+  }
+ },
+ "1 gap": {
+  "rows": 1748,
+  "pass": 90.0,
+  "exact": 61.1,
+  "similar": 90.0,
+  "length off": 10.6
+ },
+ "statement": {
+  "rows": 2622,
+  "pass": 85.0,
+  "exact": 52.1,
+  "similar": 87.8,
+  "length off": 13.8
+ },
+ "5+ lines": {
+  "rows": 725,
+  "pass": 66.9,
+  "exact": 14.9,
+  "similar": 76.4,
+  "length off": 26.2
+ },
+ "fits canvas": {
+  "rows": 2622,
+  "pass": 85.0,
+  "exact": 52.1,
+  "similar": 87.8,
+  "length off": 13.8
+ },
+ "within training length": {
+  "rows": 2622,
+  "pass": 85.0,
+  "exact": 52.1,
+  "similar": 87.8,
+  "length off": 13.8
+ },
+ "task shown": {
+  "rows": 2622,
+  "pass": 85.0,
+  "exact": 52.1,
+  "similar": 87.8,
+  "length off": 13.8
+ },
+ "opencodeinstruct": {
+  "rows": 1728,
+  "pass": 85.8,
+  "exact": 54.6,
+  "similar": 88.6,
+  "length off": 12.6
+ },
+ "independent": {
+  "rows": 1311,
+  "pass": 87.3,
+  "exact": 55.8,
+  "similar": 89.3,
+  "length off": 12.3
+ },
+ "independent, second given": {
+  "rows": 437,
+  "pass": 92.4,
+  "exact": 65.9,
+  "similar": 90.4,
+  "length off": 10.4
+ },
+ "dependent": {
+  "rows": 1311,
+  "pass": 82.7,
+  "exact": 48.4,
+  "similar": 86.4,
+  "length off": 15.4
+ },
+ "dependent, first given": {
+  "rows": 437,
+  "pass": 85.1,
+  "exact": 44.6,
+  "similar": 86.8,
+  "length off": 13.2
+ },
+ "2 gaps": {
+  "rows": 874,
+  "pass": 75.1,
+  "exact": 34.0,
+  "similar": 83.4,
+  "length off": 20.3
+ },
+ "kodcode": {
+  "rows": 894,
+  "pass": 83.4,
+  "exact": 47.1,
+  "similar": 86.3,
+  "length off": 16.1
+ },
+ "several gaps": {
+  "rows": 874,
+  "pass": 75.1,
+  "exact": 34.0,
+  "similar": 83.4,
+  "length off": 20.3
+ },
+ "linked gaps": {
+  "rows": 437,
+  "pass": 70.0,
+  "exact": 27.5,
+  "similar": 79.7,
+  "length off": 24.9
+ },
+ "linked, name hidden": {
+  "rows": 436,
+  "pass": 70.0,
+  "exact": 27.5,
+  "similar": 79.7,
+  "length off": 25.0
+ },
+ "backward link": {
+  "rows": 68,
+  "pass": 63.2,
+  "exact": 8.8,
+  "similar": 72.0,
+  "length off": 30.1
+ },
+ "dependent, both": {
+  "rows": 437,
+  "pass": 70.0,
+  "exact": 27.5,
+  "similar": 79.7,
+  "length off": 24.9
+ },
+ "2-4 lines": {
+  "rows": 784,
+  "pass": 87.4,
+  "exact": 53.2,
+  "similar": 89.7,
+  "length off": 12.0
+ },
+ "dependent, second given": {
+  "rows": 437,
+  "pass": 92.9,
+  "exact": 73.0,
+  "similar": 92.6,
+  "length off": 8.0
+ },
+ "1 line": {
+  "rows": 1113,
+  "pass": 95.1,
+  "exact": 75.5,
+  "similar": 93.9,
+  "length off": 7.0
+ },
+ "independent, first given": {
+  "rows": 437,
+  "pass": 89.5,
+  "exact": 60.9,
+  "similar": 90.3,
+  "length off": 10.7
+ },
+ "separate gaps": {
+  "rows": 437,
+  "pass": 80.1,
+  "exact": 40.5,
+  "similar": 87.1,
+  "length off": 15.6
+ },
+ "independent, both": {
+  "rows": 437,
+  "pass": 80.1,
+  "exact": 40.5,
+  "similar": 87.1,
+  "length off": 15.6
+ },
+ "faults": {
+  "unclosed": 2.4,
+  "broken": 1.9
+ }
+}

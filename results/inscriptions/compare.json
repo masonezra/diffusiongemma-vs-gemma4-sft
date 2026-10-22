@@ -1,0 +1,260 @@
+{
+ "rows": 5000,
+ "exact": {
+  "first": 12.7,
+  "second": 7.62,
+  "difference": -5.08,
+  "low": -5.94,
+  "high": -4.3,
+  "disagreements": 428,
+  "p": 0.0
+ },
+ "faithful": {
+  "first": 97.76,
+  "second": 90.66,
+  "difference": -7.1,
+  "low": -7.94,
+  "high": -6.22,
+  "disagreements": 493,
+  "p": 0.0
+ },
+ "unread": {
+  "first": 0.34,
+  "second": 1.62,
+  "difference": 1.28,
+  "low": 0.92,
+  "high": 1.66,
+  "disagreements": 92,
+  "p": 0.0
+ },
+ "error": {
+  "first": 18.22,
+  "second": 17.91,
+  "difference": -0.3,
+  "low": -1.31,
+  "high": 0.67
+ },
+ "changed": {
+  "first": 1.05,
+  "second": 4.13,
+  "difference": 3.08,
+  "low": 2.04,
+  "high": 4.23
+ },
+ "dropped": {
+  "first": 1.03,
+  "second": 3.97,
+  "difference": 2.94,
+  "low": 1.92,
+  "high": 4.1
+ },
+ "replaced": {
+  "first": 0.0,
+  "second": 0.03,
+  "difference": 0.02,
+  "low": 0.01,
+  "high": 0.03
+ },
+ "added": {
+  "first": 0.02,
+  "second": 0.13,
+  "difference": 0.11,
+  "low": 0.08,
+  "high": 0.15
+ },
+ "expanded": {
+  "first": 82.51,
+  "second": 73.26,
+  "difference": -9.25,
+  "low": -10.33,
+  "high": -8.21
+ },
+ "restored": {
+  "first": 35.24,
+  "second": 28.26,
+  "difference": -6.97,
+  "low": -8.2,
+  "high": -5.72
+ },
+ "recovered": {
+  "first": 40.06,
+  "second": 33.0,
+  "difference": -7.06,
+  "low": -7.96,
+  "high": -6.17
+ },
+ "length right": {
+  "first": 48.9,
+  "second": 43.49,
+  "difference": -5.4,
+  "low": -6.4,
+  "high": -4.4
+ },
+ "cleaned": {
+  "first": 0.0,
+  "second": 0.02,
+  "difference": 0.02,
+  "low": 0.0,
+  "high": 0.06,
+  "disagreements": 1,
+  "p": 1.0
+ },
+ "recovered, 1 letter": {
+  "first": 64.37,
+  "second": 57.44,
+  "difference": -6.93,
+  "low": -8.65,
+  "high": -5.15
+ },
+ "recovered, 2-3 letters": {
+  "first": 36.84,
+  "second": 28.68,
+  "difference": -8.16,
+  "low": -9.57,
+  "high": -6.73
+ },
+ "recovered, 4-10 letters": {
+  "first": 13.19,
+  "second": 6.91,
+  "difference": -6.28,
+  "low": -7.61,
+  "high": -4.99
+ },
+ "recovered, 11+ letters": {
+  "first": 0.97,
+  "second": 0.0,
+  "difference": -0.97,
+  "low": -2.45,
+  "high": 0.0
+ },
+ "both read": {
+  "rows": 4905,
+  "exact": {
+   "first": 12.86,
+   "second": 7.77,
+   "difference": -5.1,
+   "low": -5.95,
+   "high": -4.26,
+   "disagreements": 424,
+   "p": 0.0
+  },
+  "faithful": {
+   "first": 98.23,
+   "second": 92.17,
+   "difference": -6.06,
+   "low": -6.81,
+   "high": -5.28,
+   "disagreements": 411,
+   "p": 0.0
+  },
+  "unread": {
+   "first": 0.0,
+   "second": 0.0,
+   "difference": 0.0,
+   "low": 0.0,
+   "high": 0.0,
+   "disagreements": 0,
+   "p": 1.0
+  },
+  "error": {
+   "first": 16.5,
+   "second": 16.89,
+   "difference": 0.39,
+   "low": -0.33,
+   "high": 1.06
+  },
+  "changed": {
+   "first": 0.42,
+   "second": 0.33,
+   "difference": -0.08,
+   "low": -0.42,
+   "high": 0.15
+  },
+  "dropped": {
+   "first": 0.4,
+   "second": 0.17,
+   "difference": -0.22,
+   "low": -0.56,
+   "high": 0.01
+  },
+  "replaced": {
+   "first": 0.0,
+   "second": 0.03,
+   "difference": 0.03,
+   "low": 0.02,
+   "high": 0.03
+  },
+  "added": {
+   "first": 0.02,
+   "second": 0.13,
+   "difference": 0.11,
+   "low": 0.08,
+   "high": 0.15
+  },
+  "expanded": {
+   "first": 83.7,
+   "second": 76.75,
+   "difference": -6.96,
+   "low": -7.59,
+   "high": -6.26
+  },
+  "restored": {
+   "first": 35.68,
+   "second": 29.67,
+   "difference": -6.01,
+   "low": -7.15,
+   "high": -4.86
+  },
+  "recovered": {
+   "first": 40.15,
+   "second": 33.82,
+   "difference": -6.33,
+   "low": -7.22,
+   "high": -5.48
+  },
+  "length right": {
+   "first": 49.07,
+   "second": 44.55,
+   "difference": -4.52,
+   "low": -5.5,
+   "high": -3.57
+  },
+  "cleaned": {
+   "first": 0.0,
+   "second": 0.02,
+   "difference": 0.02,
+   "low": 0.0,
+   "high": 0.06,
+   "disagreements": 1,
+   "p": 1.0
+  },
+  "recovered, 1 letter": {
+   "first": 64.76,
+   "second": 58.98,
+   "difference": -5.77,
+   "low": -7.53,
+   "high": -4.11
+  },
+  "recovered, 2-3 letters": {
+   "first": 36.8,
+   "second": 29.24,
+   "difference": -7.56,
+   "low": -8.95,
+   "high": -6.21
+  },
+  "recovered, 4-10 letters": {
+   "first": 13.04,
+   "second": 7.11,
+   "difference": -5.93,
+   "low": -7.29,
+   "high": -4.51
+  },
+  "recovered, 11+ letters": {
+   "first": 1.01,
+   "second": 0.0,
+   "difference": -1.01,
+   "low": -2.6,
+   "high": 0.0
+  }
+ }
+}

@@ -1,0 +1,1 @@
+{"checkpoint": null, "steps": 2, "channel": "full", "hold": false, "donors": false, "trace": true, "states": true, "machines": ["sudoku"], "rungs": [], "limit": 512, "batch": 16, "gpus": 1, "sampler": "design"}
